@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dr Manisha G. Kulthe</title>
+<meta name="description" content="Dr Manisha G. Kulthe, Head of Metallurgy and Materials Engineering, COEP Technological University, Pune. Polymer nanocomposites, EMI shielding, coatings and metals processing.">
+<meta property="og:title" content="Dr Manisha G. Kulthe">
+<meta property="og:image" content="images/portrait.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: editorial asymmetric grid (side-heads left, content right), 1200px measure, hairline-divided sections.
+   Copper is reserved for the conducting network, key figures and the portrait trace; verdigris carries links and controls. */
+:root{
+  --paper:#F3F6F5; --surface:#FFFFFF; --ink:#132326; --muted:#55696C; --rule:#D3DEDC; --tint:#E5EEEC;
+  --verdigris:#1D7268; --copper:#B0602A; --on-accent:#FFFFFF; --shadow:rgba(19,35,38,.12); --scrim:rgba(8,16,18,.92);
+  --photo-ground:#0B1416; --photo-scrim:rgba(6,12,14,.82); --on-photo:#F2F6F5; --on-photo-accent:#EFA86E; --crest-plate:#FFFFFF;
+  --f-display:"Newsreader","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --gutter:clamp(16px,4vw,40px); --maxw:1200px;
+  --t-xs:.78rem; --t-sm:.9rem; --t-md:1.0625rem; --t-lg:1.25rem; --t-h3:1.4rem; --t-h2:clamp(1.85rem,3.1vw,2.6rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0D1618; --surface:#132023; --ink:#E2ECEA; --muted:#93A9AB; --rule:#243739; --tint:#172A2D;
+    --verdigris:#58C3B5; --copper:#E39A5E; --on-accent:#06191A; --shadow:rgba(0,0,0,.5); --scrim:rgba(3,8,9,.94);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0D1618; --surface:#132023; --ink:#E2ECEA; --muted:#93A9AB; --rule:#243739; --tint:#172A2D;
+  --verdigris:#58C3B5; --copper:#E39A5E; --on-accent:#06191A; --shadow:rgba(0,0,0,.5); --scrim:rgba(3,8,9,.94);
+  color-scheme:dark;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px)}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 var(--t-md)/1.65 var(--f-body);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{max-width:100%}
+a{color:var(--verdigris);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--ink)}
+h1,h2,h3,h4{font-family:var(--f-display);font-weight:500;line-height:1.12;margin:0;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--copper);outline-offset:3px;border-radius:3px}
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gutter)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.num{font-variant-numeric:tabular-nums lining-nums}
+
+/* ---------- nav ---------- */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.nav-in{display:flex;align-items:center;gap:14px;min-height:64px}
+.mark{flex:none;display:grid;place-items:center;width:40px;height:40px;border:1px solid var(--ink);border-radius:50%;color:var(--ink);text-decoration:none;font:500 .82rem/1 var(--f-display);letter-spacing:.06em}
+.mark:hover{border-color:var(--copper);color:var(--copper)}
+.nav-name{min-width:0;display:flex;flex-direction:column;line-height:1.2;margin-right:auto}
+.nav-name b{font:500 1.02rem/1.2 var(--f-display);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nav-name span{font-size:var(--t-xs);color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nav-links{list-style:none;display:flex;gap:2px;margin:0;padding:0}
+.nav-links a{display:block;padding:8px 11px;border-radius:4px;color:var(--muted);text-decoration:none;font-size:var(--t-sm);font-weight:500}
+.nav-links a:hover{color:var(--ink);background:var(--tint)}
+.nav-links a[aria-current="page"]{color:var(--ink);box-shadow:inset 0 -2px 0 var(--copper);border-radius:0}
+.icon-btn{flex:none;width:40px;height:40px;display:grid;place-items:center;border:1px solid var(--rule);background:var(--surface);border-radius:6px;cursor:pointer;color:var(--muted)}
+.icon-btn:hover{color:var(--ink);border-color:var(--ink)}
+.icon-btn svg{width:18px;height:18px}
+.menu-btn{display:none}
+@media (max-width:1080px){
+  .menu-btn{display:grid}
+  .nav-links{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;gap:0;background:var(--surface);border-bottom:1px solid var(--rule);padding:6px var(--gutter) 12px}
+  .nav-links.open{display:flex}
+  .nav-links a{padding:13px 4px;border-bottom:1px solid var(--rule);border-radius:0}
+  .nav-links a[aria-current="page"]{box-shadow:inset 3px 0 0 var(--copper);padding-left:12px}
+}
+@media (max-width:460px){.nav-name span{display:none}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--rule)}
+.hero canvas.field{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.85fr);gap:clamp(36px,6vw,96px);align-items:center;padding-block:clamp(44px,7vw,104px)}
+.role{display:flex;flex-direction:column;gap:2px;font-size:var(--t-sm);color:var(--muted)}
+.role b{color:var(--ink);font-weight:600}
+.name{margin-top:22px;font-size:clamp(2.9rem,7.4vw,5.8rem);line-height:.98;font-weight:400;letter-spacing:-.025em;font-variation-settings:"opsz" 72}
+.name .pre{display:block;font-size:.32em;letter-spacing:.02em;color:var(--muted);margin-bottom:.35em;font-weight:400}
+.name .ln{display:block}
+.thesis{margin-top:26px;max-width:34em;font:400 clamp(1.12rem,1.6vw,1.32rem)/1.55 var(--f-display);color:var(--ink)}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:4px;border:1px solid var(--ink);background:transparent;color:var(--ink);text-decoration:none;font-weight:500;font-size:var(--t-sm);cursor:pointer}
+.btn:hover{background:var(--ink);color:var(--paper)}
+.btn.solid{background:var(--verdigris);border-color:var(--verdigris);color:var(--on-accent)}
+.btn.solid:hover{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.sheet{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:40px 0 0;border-top:1px solid var(--ink)}
+.sheet div{padding:14px 14px 0 0}
+.sheet div+div{padding-left:14px;border-left:1px solid var(--rule)}
+.sheet dt{font-size:var(--t-xs);color:var(--muted);line-height:1.3}
+.sheet dd{margin:6px 0 0;font:400 clamp(1.5rem,2.4vw,2rem)/1.1 var(--f-display);font-variant-numeric:tabular-nums lining-nums}
+.sheet dd small{font:500 var(--t-xs) var(--f-mono);color:var(--muted);margin-left:4px;letter-spacing:0}
+.sheet .hot dd{color:var(--copper)}
+@media (max-width:620px){.sheet{grid-template-columns:repeat(2,minmax(0,1fr))}.sheet div:nth-child(3){border-left:0;padding-left:0}.sheet div:nth-child(n+3){border-top:1px solid var(--rule);margin-top:14px}}
+
+.portrait{position:relative;margin:0;justify-self:end;width:100%;max-width:400px}
+.frame{position:relative}
+.frame::before{content:"";position:absolute;inset:18px -18px -18px 18px;background:var(--tint);border-radius:2px}
+.frame img,.frame .ph{position:relative;display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 18%;border-radius:2px;background:var(--tint)}
+.frame .ph{display:grid;place-items:center;font:400 4rem var(--f-display);color:var(--muted)}
+.trace{position:absolute;inset:-11px;pointer-events:none}
+.trace i{position:absolute;background:var(--copper)}
+.trace .t{top:0;left:0;right:0;height:1.5px;transform-origin:left}
+.trace .r{top:0;right:0;bottom:0;width:1.5px;transform-origin:top}
+.trace .b{bottom:0;left:0;right:0;height:1.5px;transform-origin:right}
+.trace .l{top:0;left:0;bottom:0;width:1.5px;transform-origin:bottom}
+.portrait figcaption{margin-top:30px;font-size:var(--t-sm);color:var(--muted);line-height:1.5;max-width:34em}
+.fig{font:500 var(--t-xs) var(--f-mono);color:var(--verdigris);margin-right:8px;letter-spacing:.02em}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}.portrait{justify-self:start;max-width:300px;order:-1}}
+@media (max-width:520px){.portrait{max-width:240px}.trace{inset:-7px}.frame::before{inset:12px -12px -12px 12px}}
+
+/* load choreography: one orchestrated moment */
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes grow-x{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes grow-y{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes develop{from{opacity:0;filter:grayscale(1) contrast(.8)}to{opacity:1;filter:none}}
+.rise{animation:rise .8s cubic-bezier(.2,.7,.2,1) both;animation-delay:var(--d,0s)}
+.frame img{animation:develop 1.1s ease .15s both}
+.trace .t{animation:grow-x .45s cubic-bezier(.6,0,.4,1) .55s both}
+.trace .r{animation:grow-y .45s cubic-bezier(.6,0,.4,1) 1s both}
+.trace .b{animation:grow-x .45s cubic-bezier(.6,0,.4,1) 1.45s both}
+.trace .l{animation:grow-y .45s cubic-bezier(.6,0,.4,1) 1.9s both}
+.page{animation:rise .45s ease both}
+@media (prefers-reduced-motion:reduce){.rise,.frame img,.trace i,.page{animation:none}}
+
+/* ---------- sections ---------- */
+.section{padding-block:clamp(56px,8vw,104px)}
+.section+.section{border-top:1px solid var(--rule)}
+.side{display:grid;grid-template-columns:minmax(0,280px) minmax(0,1fr);gap:clamp(24px,5vw,72px)}
+.side>*{min-width:0}
+.side-head h2{font-size:var(--t-h2)}
+.side-head p{margin-top:12px;color:var(--muted);font-size:var(--t-sm);max-width:28em}
+.page-head{padding-block:clamp(48px,7vw,88px) clamp(28px,4vw,44px);border-bottom:1px solid var(--rule)}
+.page-head h1{font-size:clamp(2.4rem,5.4vw,4rem);font-weight:400;letter-spacing:-.02em}
+.page-head p{margin-top:14px;max-width:40em;color:var(--muted);font-size:var(--t-lg);line-height:1.55}
+@media (max-width:820px){.side{grid-template-columns:1fr}}
+.page-head+.section{padding-top:clamp(28px,4vw,48px)}
+
+.prose{max-width:38em;display:flex;flex-direction:column;gap:1.05em}
+.prose p{font-size:1.08rem;line-height:1.75}
+.prose p:first-child{font:400 1.3rem/1.6 var(--f-display)}
+
+/* research areas */
+.areas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border-top:1px solid var(--rule)}
+.area{padding:26px 26px 28px 0;border-bottom:1px solid var(--rule);display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px}
+.area:nth-child(even){padding-left:26px;border-left:1px solid var(--rule)}
+.area svg{width:44px;height:44px;color:var(--verdigris)}
+.area h3{font-size:var(--t-h3)}
+.area p{margin-top:8px;color:var(--muted);font-size:.98rem}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px;padding:0;list-style:none}
+.tags li{font:500 var(--t-xs) var(--f-mono);border:1px solid var(--rule);border-radius:3px;padding:3px 8px;color:var(--muted)}
+@media (max-width:700px){.areas{grid-template-columns:1fr}.area:nth-child(even){padding-left:0;border-left:0}}
+
+/* ---------- percolation explorer ---------- */
+.lab{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:0;border:1px solid var(--rule);background:var(--surface);border-radius:6px;overflow:hidden}
+.lab>*{min-width:0}
+.lab-stage{position:relative;padding:18px;border-right:1px solid var(--rule)}
+.lab-stage canvas{display:block;width:100%;height:auto;aspect-ratio:628/380;border-radius:3px}
+.stage-labels{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;margin-top:10px;font:500 var(--t-xs) var(--f-mono);color:var(--muted)}
+.stage-labels .mid{text-align:center}
+@media (max-width:520px){.stage-labels .mid{display:none}}
+.lab-side{padding:20px;display:flex;flex-direction:column;gap:18px}
+.readout{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.readout dt{font-size:var(--t-xs);color:var(--muted);line-height:1.3}
+.readout dd{margin:4px 0 0;font:400 1.5rem/1.1 var(--f-display);font-variant-numeric:tabular-nums lining-nums}
+.state{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;padding:6px 12px;border-radius:999px;font-size:var(--t-sm);font-weight:500;background:var(--tint);color:var(--muted);transition:background .3s,color .3s}
+.state i{width:8px;height:8px;border-radius:50%;background:currentColor}
+.state.on{background:color-mix(in srgb,var(--copper) 16%,transparent);color:var(--copper)}
+.state.on i{animation:pulse 1.4s ease-in-out infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 6px color-mix(in srgb,var(--copper) 0%,transparent),0 0 0 3px color-mix(in srgb,var(--copper) 35%,transparent)}}
+.slider label{display:flex;justify-content:space-between;font-size:var(--t-sm);font-weight:500}
+.slider label span{font-family:var(--f-mono);color:var(--copper)}
+.slider input{width:100%;margin-top:10px;accent-color:var(--copper);height:26px;cursor:pointer}
+.ctrl{display:flex;flex-wrap:wrap;gap:8px}
+.ctrl .btn{padding:8px 14px}
+.plot{width:100%;height:auto;display:block}
+.plot .ax{stroke:var(--rule);stroke-width:1}
+.plot .grid{stroke:var(--rule);stroke-width:1;stroke-dasharray:2 4}
+.plot text{fill:var(--muted);font:400 10px var(--f-mono)}
+.plot .curve{fill:none;stroke:var(--verdigris);stroke-width:2}
+.plot .cond{fill:var(--copper);opacity:.08}
+.plot .pc{stroke:var(--copper);stroke-width:1;stroke-dasharray:3 3}
+.plot .pc-t{fill:var(--copper)}
+.plot .dot{fill:var(--copper);stroke:var(--surface);stroke-width:2}
+.lab-note{grid-column:1/-1;border-top:1px solid var(--rule);padding:16px 20px;font-size:var(--t-sm);color:var(--muted);line-height:1.6}
+@media (max-width:900px){.lab{grid-template-columns:1fr}.lab-stage{border-right:0;border-bottom:1px solid var(--rule)}}
+@media (max-width:420px){.readout{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* ---------- masthead ---------- */
+.masthead{background:var(--surface);border-bottom:1px solid var(--rule)}
+.mast-in{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:12px}
+.mast-brand{display:flex;align-items:center;gap:14px;min-width:0;text-decoration:none;color:var(--ink)}
+.mast-brand:hover{color:var(--ink)}
+.logo-plate{flex:none;display:grid;place-items:center;background:var(--crest-plate);border-radius:6px;padding:4px 5px}
+.logo-plate img{display:block;height:58px;width:auto}
+.logo-plate.lg img{height:72px}
+.mast-text{display:flex;flex-direction:column;min-width:0;line-height:1.25}
+.mast-text b{font:600 clamp(1.05rem,1.8vw,1.35rem)/1.2 var(--f-display);letter-spacing:-.005em}
+.mast-text span{font-size:var(--t-xs);color:var(--muted);margin-top:3px}
+.mast-dept{flex:none;max-width:16em;text-align:right;font:500 var(--t-sm)/1.35 var(--f-display);color:var(--verdigris)}
+@media (max-width:760px){.mast-dept{display:none}.logo-plate img{height:46px}.mast-text span{display:none}}
+
+/* ---------- moments banner ---------- */
+.banner{position:relative;background:var(--photo-ground);color:var(--on-photo);isolation:isolate}
+.b-stage{position:relative;height:clamp(280px,46vw,600px);overflow:hidden}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity 1.2s ease;pointer-events:none}
+.slide.on{opacity:1}
+.slide .bg{position:absolute;inset:-40px;width:calc(100% + 80px);height:calc(100% + 80px);max-width:none;object-fit:cover;filter:blur(30px) saturate(1.15) brightness(.62)}
+.slide .fg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.slide.tall .fg{object-fit:contain}
+.slide.on .fg{animation:drift 9s ease-out both}
+@keyframes drift{from{transform:scale(1.07)}to{transform:scale(1)}}
+.slide.tall.on .fg{animation:none}
+.b-stage::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(to top,var(--photo-scrim) 0%,transparent 48%),linear-gradient(to bottom,rgba(0,0,0,.18),transparent 22%)}
+.b-open{position:absolute;inset:0;z-index:1;border:0;background:transparent;cursor:zoom-in}
+.b-cap{position:absolute;left:0;right:0;bottom:0;z-index:2;pointer-events:none;padding-block:0 26px}
+.b-cap-in{display:flex;align-items:flex-end;justify-content:space-between;gap:24px}
+.b-text{min-width:0;max-width:46em}
+.b-tag{display:inline-block;font:500 var(--t-xs) var(--f-mono);letter-spacing:.04em;color:var(--on-photo-accent)}
+.b-text p{margin-top:6px;font:400 clamp(1.08rem,2.1vw,1.6rem)/1.35 var(--f-display);text-wrap:balance;text-shadow:0 1px 18px rgba(0,0,0,.35);animation:rise .7s ease both}
+.b-ctrl{flex:none;display:flex;align-items:center;gap:8px;pointer-events:auto}
+.b-count{font:500 var(--t-xs) var(--f-mono);margin-right:6px;opacity:.85}
+.b-ctrl button{width:40px;height:40px;display:grid;place-items:center;border-radius:50%;border:1px solid rgba(242,246,245,.38);background:rgba(10,18,20,.25);color:var(--on-photo);cursor:pointer;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.b-ctrl button:hover{background:rgba(242,246,245,.16)}
+.b-ctrl svg{width:18px;height:18px}
+.b-all{margin-left:6px;display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;border:1px solid rgba(242,246,245,.38);color:var(--on-photo);text-decoration:none;font-size:var(--t-sm);font-weight:500;background:rgba(10,18,20,.25)}
+.b-all:hover{color:var(--on-photo);background:rgba(242,246,245,.16)}
+.b-all span{font:500 var(--t-xs) var(--f-mono);opacity:.8}
+.b-prog{position:absolute;left:0;right:0;bottom:0;z-index:3;display:flex;gap:3px;height:3px}
+.b-prog span{flex:1;background:rgba(242,246,245,.22);overflow:hidden}
+.b-prog span.done{background:rgba(242,246,245,.6)}
+.b-prog i{display:block;height:100%;background:var(--on-photo-accent);transform-origin:left;animation:grow-x 7s linear both}
+.banner:hover .b-prog i,.banner:focus-within .b-prog i{animation-play-state:paused}
+@media (max-width:640px){.b-stage{height:clamp(230px,66vw,340px)}.b-stage::after{background:linear-gradient(to bottom,rgba(0,0,0,.18),transparent 22%)}.b-cap{position:static;padding-block:14px 18px}.b-cap-in{flex-direction:column;align-items:stretch;gap:12px}.b-text p{text-shadow:none}.b-ctrl{justify-content:flex-start}.b-all{margin-left:auto}}
+@media (prefers-reduced-motion:reduce){.slide{transition:none}.slide.on .fg,.b-text p{animation:none}}
+
+/* ---------- publications ---------- */
+.pubs{list-style:none;margin:0;padding:0}
+.pub{display:grid;grid-template-columns:72px minmax(0,1fr);gap:18px;padding:20px 0;border-top:1px solid var(--rule)}
+.pub .yr{font:400 1.25rem var(--f-display);color:var(--muted);font-variant-numeric:tabular-nums lining-nums}
+.pub h3{font-size:1.18rem;line-height:1.35;font-weight:500}
+.pub .au{margin-top:6px;font-size:var(--t-sm);color:var(--muted)}
+.pub .au b{color:var(--ink);font-weight:600}
+.pub .jr{margin-top:4px;font-size:var(--t-sm);font-style:italic}
+.pub .meta{margin-top:8px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;font:500 var(--t-xs) var(--f-mono)}
+.kind{display:inline-flex;align-items:center;gap:6px;color:var(--muted)}
+.kind i{width:8px;height:8px;border-radius:50%}
+.k-Journal{background:var(--verdigris)}
+.k-Conference{background:var(--copper)}
+.k-Chapter{background:transparent;box-shadow:inset 0 0 0 1.5px var(--muted)}
+@media (max-width:520px){.pub{grid-template-columns:1fr;gap:4px}}
+
+.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:22px}
+.search{position:relative;flex:1 1 260px;min-width:0}
+.search svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:16px;height:16px;color:var(--muted)}
+.search input{width:100%;padding:11px 12px 11px 38px;border:1px solid var(--rule);border-radius:4px;background:var(--surface);color:var(--ink);font:inherit;font-size:var(--t-sm)}
+.search input:focus{outline:none;border-color:var(--verdigris)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{padding:8px 13px;border:1px solid var(--rule);border-radius:999px;background:var(--surface);cursor:pointer;font-size:var(--t-sm);color:var(--muted)}
+.chip:hover{color:var(--ink);border-color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.chip small{font-family:var(--f-mono);margin-left:4px;opacity:.75}
+
+.record{overflow-x:auto;margin-bottom:28px;border:1px solid var(--rule);border-radius:6px;background:var(--surface);padding:16px 16px 8px}
+.record svg{display:block;min-width:560px;width:100%;height:auto}
+.record .ax{stroke:var(--rule)}
+.record text{fill:var(--muted);font:400 10px var(--f-mono)}
+.record .col{fill:transparent;cursor:pointer}
+.record .col:hover,.record .col.sel{fill:var(--tint)}
+.record .d-Journal{fill:var(--verdigris)}
+.record .d-Conference{fill:var(--copper)}
+.record .d-Chapter{fill:var(--surface);stroke:var(--muted);stroke-width:1.5}
+.record-key{display:flex;flex-wrap:wrap;gap:16px;margin-top:6px;font:500 var(--t-xs) var(--f-mono);color:var(--muted)}
+.empty{padding:40px 24px;text-align:center;border:1px dashed var(--rule);border-radius:6px;color:var(--muted)}
+.empty b{display:block;color:var(--ink);font:500 1.2rem var(--f-display);margin-bottom:6px}
+
+/* ---------- projects ---------- */
+.funds{list-style:none;margin:0;padding:0}
+.fund{padding:22px 0;border-top:1px solid var(--rule);display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:10px 24px;align-items:start}
+.fund h3{font-size:1.2rem;line-height:1.35}
+.fund .by{margin-top:6px;color:var(--muted);font-size:var(--t-sm)}
+.fund .amt{text-align:right;font:400 1.6rem/1.1 var(--f-display);font-variant-numeric:tabular-nums lining-nums}
+.fund .amt small{display:block;font:500 var(--t-xs) var(--f-mono);color:var(--muted);margin-top:4px}
+.bar{grid-column:1/-1;height:6px;background:var(--tint);border-radius:3px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--verdigris);border-radius:3px}
+.fund.on .bar i{background:var(--copper)}
+.flag{display:inline-block;margin-left:8px;font:500 var(--t-xs) var(--f-mono);color:var(--copper);vertical-align:2px}
+.flag.done{color:var(--muted)}
+@media (max-width:560px){.fund{grid-template-columns:1fr}.fund .amt{text-align:left}}
+.total{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.total b{font:400 clamp(2.4rem,5vw,3.4rem)/1 var(--f-display);color:var(--copper);font-variant-numeric:tabular-nums lining-nums}
+.total span{color:var(--muted)}
+
+/* ---------- timeline ---------- */
+.tl{list-style:none;margin:0;padding:0;position:relative}
+.tl::before{content:"";position:absolute;left:5px;top:8px;bottom:8px;width:1px;background:var(--rule)}
+.tl li{position:relative;padding:0 0 30px 34px}
+.tl li::before{content:"";position:absolute;left:0;top:7px;width:11px;height:11px;border-radius:50%;background:var(--paper);border:1.5px solid var(--verdigris)}
+.tl li.now::before{background:var(--copper);border-color:var(--copper)}
+.tl .when{font:500 var(--t-xs) var(--f-mono);color:var(--verdigris)}
+.tl h3{margin-top:4px;font-size:1.22rem}
+.tl p{margin-top:4px;color:var(--muted);font-size:.97rem}
+.cols2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(28px,5vw,64px)}
+.cols2>*{min-width:0}
+.cols2 h2{font-size:1.6rem;margin-bottom:26px}
+@media (max-width:760px){.cols2{grid-template-columns:1fr}}
+
+/* awards */
+.awards{list-style:none;margin:0;padding:0}
+.awards li{display:grid;grid-template-columns:110px minmax(0,1fr);gap:18px;padding:22px 0;border-top:1px solid var(--rule)}
+.awards .when{font:400 1.2rem var(--f-display);color:var(--copper);font-variant-numeric:tabular-nums lining-nums}
+.awards h3{font-size:1.3rem}
+.awards p{margin-top:4px;color:var(--muted)}
+.members{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:0;border-top:1px solid var(--rule)}
+.members div{padding:18px 18px 18px 0;border-bottom:1px solid var(--rule)}
+.members b{display:block;font:500 1.08rem/1.3 var(--f-display)}
+.members span{display:block;margin-top:4px;font-size:var(--t-sm);color:var(--muted)}
+@media (max-width:520px){.awards li{grid-template-columns:1fr;gap:2px}}
+
+/* gallery */
+.masonry{columns:3 280px;column-gap:18px}
+.tile{break-inside:avoid;margin:0 0 18px;cursor:zoom-in}
+.tile img{display:block;width:100%;border-radius:3px;transition:transform .5s ease,filter .5s ease}
+.tile:hover img{transform:scale(1.015)}
+.tile figcaption{margin-top:8px;font-size:var(--t-sm);color:var(--muted);line-height:1.45}
+.tile figcaption .fig{display:block;margin:0 0 2px}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:60;background:var(--scrim);display:grid;grid-template-rows:auto minmax(0,1fr) auto;padding:calc(env(safe-area-inset-top,0px) + 12px) 16px calc(env(safe-area-inset-bottom,0px) + 16px);color:#EEF3F2}
+.lb-top{display:flex;justify-content:space-between;align-items:center;font:500 var(--t-xs) var(--f-mono)}
+.lb-img{display:grid;place-items:center;min-height:0}
+.lb-img img{max-width:100%;max-height:100%;object-fit:contain;border-radius:3px}
+.lb-cap{display:flex;gap:12px;align-items:center;justify-content:center;max-width:900px;margin:12px auto 0;text-align:center;font:400 1.05rem/1.5 var(--f-display)}
+.lb button{width:44px;height:44px;flex:none;display:grid;place-items:center;border-radius:50%;border:1px solid rgba(238,243,242,.3);background:transparent;color:#EEF3F2;cursor:pointer}
+.lb button:hover{background:rgba(238,243,242,.12)}
+.lb svg{width:18px;height:18px}
+
+/* contact */
+.contact{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid var(--rule)}
+.contact>div{padding:24px 24px 24px 0;min-width:0}
+.contact>div+div{padding-left:24px;border-left:1px solid var(--rule)}
+.contact h3{font-size:1.2rem;margin-bottom:12px}
+.copyrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.sel{user-select:all;-webkit-user-select:all;word-break:break-word}
+.copy{padding:4px 10px;border:1px solid var(--rule);border-radius:3px;background:var(--surface);cursor:pointer;font:500 var(--t-xs) var(--f-mono);color:var(--muted)}
+.copy:hover{border-color:var(--ink);color:var(--ink)}
+.contact p{color:var(--muted)}
+@media (max-width:820px){.contact{grid-template-columns:1fr}.contact>div+div{padding-left:0;border-left:0;border-top:1px solid var(--rule)}}
+.links{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:6px}
+
+/* invite band */
+.invite{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:end;padding:clamp(28px,4vw,44px);border:1px solid var(--ink);border-radius:6px;background:var(--surface)}
+.invite h2{font-size:clamp(1.6rem,2.8vw,2.2rem)}
+.invite p{margin-top:10px;color:var(--muted);max-width:40em}
+@media (max-width:640px){.invite{grid-template-columns:1fr}}
+
+/* footer */
+.foot{border-top:1px solid var(--rule);padding-block:36px 44px;font-size:var(--t-sm);color:var(--muted)}
+.foot-in{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:start}
+.foot b{display:block;color:var(--ink);font:500 1.1rem var(--f-display);margin-bottom:4px}
+.foot-id{display:flex;gap:16px;align-items:flex-start}
+.foot nav{display:flex;flex-wrap:wrap;gap:6px 18px}
+.foot nav a{color:var(--muted);text-decoration:none}
+.foot nav a:hover{color:var(--ink)}
+@media (max-width:700px){.foot-in{grid-template-columns:1fr}}
+.more{margin-top:26px}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<noscript><p style="padding:24px">Dr Manisha G. Kulthe, Head of the Department of Metallurgy and Materials Engineering, COEP Technological University, Pune. This site needs JavaScript.</p></noscript>
+<script type="application/json" id="seed">{"tagline": "Designing polymer nanocomposites that shield electronics, manage heat and resist corrosion, and turning waste into engineering materials.", "about": ["Dr Kulthe heads the Department of Metallurgy and Materials Engineering at COEP Technological University, where she has taught since October 2005, rising from Lecturer to Assistant Professor and Head of Department. She began her career with a year of industrial research at TRDDC, Pune.", "She holds a B.E. from VNIT Nagpur, an M.E. from COEP and a Ph.D. from Savitribai Phule Pune University. Her work is funded by ANRF, AICTE, UGC and industry, and she received the Alumni Distinguished Faculty Fellow Award (2023–25)."], "portrait": "images/portrait.jpg", "pubs": [{"y": 2026, "t": "A review on polymer-based nanocomposites as radar absorbing materials", "a": "Anil Kumar, M. G. Kulthe", "j": "Polymer-Plastics Technology and Materials", "k": "Journal"}, {"y": 2026, "t": "Hexagonal boron nitride for enhancing directional thermal conductivity in polymer matrices", "a": "A. Dahiwal, B. Kandasubramanian, M. G. Kulthe, S. Umak", "j": "Journal of Polymer Research", "k": "Journal"}, {"y": 2025, "t": "Leveraging LPDC and HPDC die casting processes for enhanced transport management in India", "a": "M. G. Kulthe, M. Kumar, R. Gadve", "j": "Article", "k": "Journal", "u": "https://www.researchgate.net/publication/397016450_Leveraging_LPDC_and_HPDC_Die_Casting_Processes_for_Enhanced_Transport_Management_in_India"}, {"y": 2024, "t": "MXene–reclaimed cellulose acetate composites for methylene blue removal through synergistic adsorption and photocatalysis", "a": "A. Subash, S. Sen, M. Naebe, B. Kandasubramanian, M. Kulthe, A. Kore", "j": "Polymers for Advanced Technologies 35(11): e6622", "k": "Journal", "u": "https://doi.org/10.1002/pat.6622"}, {"y": 2024, "t": "The role of additive manufacturing in the study of carbon fiber-reinforced polymer composite", "a": "S. D. Meshram, S. Gupta, M. Kulthe, B. Kandasubramanian", "j": "Polymer Bulletin 81(17): 15469–15511", "k": "Journal", "u": "https://doi.org/10.1007/s00289-024-05273-w"}, {"y": 2024, "t": "Rice husk ash: effective reinforcement for epoxy-based composites for electronic applications", "a": "V. S. Darekar, M. G. Kulthe, A. Goyal, R. K. Goyal", "j": "Journal of Electronic Materials 53(3): 1723–1735", "k": "Journal", "u": "https://doi.org/10.1007/s11664-023-10878-x"}, {"y": 2024, "t": "Effect of nanosilica on compressive properties of hybrid structural composites", "a": "Y. K. Patel, A. Anand, M. G. Kulthe, et al., C. G. Jayalakshmi", "j": "Book chapter", "k": "Chapter"}, {"y": 2023, "t": "Effect of annealing on the physical properties of LaFeO₃ perovskite nanomaterial prepared by co-precipitation method for H₂ generation", "a": "N. A. Patil, Y. S. Patil, G. L. Agawane, M. Kulthe, J. W. Dadge, A. Yengantiwar, A. Deshmukh", "j": "Materials Science Forum 1099: 139–144", "k": "Journal", "u": "https://doi.org/10.4028/p-m96v7q"}, {"y": 2022, "t": "Creep, recovery and dynamic mechanical properties of PEK/MWCNT nanocomposites", "a": "M. G. Kulthe, R. K. Goyal, S. P. Butee", "j": "Materials Science and Engineering: B 282: 115752", "k": "Journal", "u": "https://doi.org/10.1016/j.mseb.2022.115752"}, {"y": 2022, "t": "Fabrication, mechanical properties and flammability of polypropylene/MoS₂ composites", "a": "A. Kolekar, M. Kulthe, V. Bansode, A. Mali", "j": "Materials Today: Proceedings 50: 1563–1569", "k": "Conference", "u": "https://doi.org/10.1016/j.matpr.2021.09.123"}, {"y": 2020, "t": "Electrical, mechanical, and electromagnetic interference shielding properties of poly(ether-ketone)–MWCNT nanocomposites", "a": "M. G. Kulthe, R. K. Goyal, S. P. Butee", "j": "Journal of Materials Science: Materials in Electronics 31(20): 18085–18095", "k": "Journal", "u": "https://doi.org/10.1007/s10854-020-04359-x"}, {"y": 2014, "t": "Influence of Cu microparticles on mechanical properties of injection molded polypropylene/Cu composites", "a": "M. A. Kori, M. G. Kulthe, R. K. Goyal", "j": "Int. J. Innovative Research in Science, Engineering and Technology 3(6): 14034–14043", "k": "Journal"}, {"y": 2012, "t": "Microhardness and electrical properties of PVC/Cu composites prepared by ball mill", "a": "M. G. Kulthe, R. K. Goyal", "j": "Advanced Materials Letters 3(3): 246–249", "k": "Journal", "u": "https://doi.org/10.5185/amlett.2012.3353"}, {"y": 2006, "t": "Model based optimisation of highly automated industrial batch annealing operation", "a": "S. S. Sahay, K. Krishnan, M. Kulthe, A. Chodha, B. Bhattacharya, A. K. Das", "j": "Ironmaking & Steelmaking 33(4): 306–314", "k": "Journal", "u": "https://doi.org/10.1179/174328106X102144"}, {"y": 2006, "t": "In pursuit of cycle time reduction of a highly automated industrial batch annealing operation", "a": "S. S. Sahay, K. Krishnan, M. Kulthe, A. Chodha, B. Bhattacharya, A. K. Das", "j": "Tata Search 2: 387–397", "k": "Journal"}], "projects": [{"y": "2025–30", "t": "High entropy halide perovskites with reduced lead content and high stability for optoelectronic applications", "a": "ANRF", "amt": 250, "on": true}, {"y": "2024", "t": "The MacDermid Enthone Center for Anti-Corrosion Plating and Testing", "a": "CSR · MacDermid Alpha Electronics Solutions", "amt": 35, "on": true}, {"y": "2013–16", "t": "Development of polymer nanocomposites", "a": "AICTE Research Promotion Scheme", "amt": 21.5}, {"y": "2011–14", "t": "Characterization of polymeric composites", "a": "UGC Major Research Project", "amt": 10.5}], "awards": [{"y": "2023–25", "t": "Alumni Distinguished Faculty Fellow Award", "s": "Alumni Association, Department of Metallurgy, COEP"}, {"y": "2004", "t": "Gobind Jagtiani Scholarship (USA)", "s": "For dissertation excellence during M.E."}], "members": [{"y": "2024", "t": "The Institute of Indian Foundrymen", "s": "Member"}, {"y": "2023", "t": "Indian Institute of Metals", "s": "Life member"}, {"y": "2008", "t": "Powder Metallurgy Association of India", "s": "Life member"}, {"y": "2006", "t": "Materials Research Society of India", "s": "Life member"}], "qual": [{"y": "2022", "t": "Ph.D., Metallurgy and Materials Science", "s": "Savitribai Phule Pune University"}, {"y": "2004", "t": "M.E., Metallurgy", "s": "College of Engineering Pune, University of Pune · Gobind Jagtiani Scholarship"}, {"y": "2002", "t": "B.E., Metallurgy", "s": "VNIT (VRCE), Nagpur University"}], "exp": [{"y": "Present", "t": "Head of Department", "s": "Metallurgy and Materials Engineering, COEP Technological University", "now": true}, {"y": "2005 – now", "t": "Lecturer, then Assistant Professor", "s": "Metallurgy and Materials Engineering, COEP Technological University, Pune"}, {"y": "1 year", "t": "Research Associate, TRDDC, Pune", "s": "Industrial research on cycle-time optimisation of batch annealing"}], "gallery": [{"id": "g01", "url": "images/womens-day-felicitation.jpg", "cap": "Receiving the award on International Women’s Day at COEP Technological University", "tag": "Felicitation", "cat": "events"}, {"id": "g02", "url": "images/womens-day-awardees.jpg", "cap": "With fellow awardees and dignitaries at the International Women’s Day celebration", "tag": "Award ceremony", "cat": "events"}, {"id": "g03", "url": "images/industry-lecture-group.jpg", "cap": "Faculty, students and visiting delegates after an industry lecture in the department seminar hall", "tag": "Industry lecture", "cat": "events"}, {"id": "g04", "url": "images/university-connect-felicitation.jpg", "cap": "Felicitating the guest speaker at the Carraro India University Connect session", "tag": "Guest session", "cat": "events"}, {"id": "g05", "url": "images/council-hall-delegation.jpg", "cap": "With the visiting industry delegation and COEP faculty in the Council Hall", "tag": "Industry visit", "cat": "events"}, {"id": "g06", "url": "images/mou-exchange-council-hall.jpg", "cap": "Exchange of the signed Memorandum of Understanding in the COEP Council Hall", "tag": "MoU signing", "cat": "industry"}, {"id": "g07", "url": "images/invited-talk-polymer-composites.jpg", "cap": "Felicitation after the invited talk on polymer composites for automotive applications", "tag": "Invited talk", "cat": "events"}, {"id": "g08", "url": "images/syntropy-team.jpg", "cap": "Organising team at SYNTROPY, the student technical festival", "tag": "SYNTROPY", "cat": "events"}, {"id": "g09", "url": "images/syntropy-session.jpg", "cap": "Valedictory session of SYNTROPY, hosted with the AIChE student chapter and the Institution’s Innovation Council", "tag": "SYNTROPY", "cat": "events"}, {"id": "g10", "url": "images/wies-2025-inauguration.jpg", "cap": "Inauguration of WIES 2025, the Welding Innovation and Excellence Summit, organised by IIW-India Pune Branch with the Department of Metallurgy and Materials Engineering", "tag": "WIES 2025", "cat": "events"}, {"id": "g11", "url": "images/department-group-01.jpg", "cap": "Department faculty and visitors on the steps of the Metallurgy and Materials Engineering building", "tag": "Department", "cat": "department"}, {"id": "g12", "url": "images/department-entrance-group.jpg", "cap": "Faculty and research students at the department entrance", "tag": "Department", "cat": "department"}, {"id": "g13", "url": "images/department-group-02.jpg", "cap": "Faculty and staff of the Department of Metallurgy and Materials Engineering", "tag": "Department", "cat": "department"}, {"id": "g14", "url": "images/department-group-03.jpg", "cap": "Group photograph with visiting faculty at the department entrance", "tag": "Department", "cat": "department"}, {"id": "g15", "url": "images/department-group-04.jpg", "cap": "Department faculty with guests after a programme at COEP Tech", "tag": "Department", "cat": "department"}, {"id": "g16", "url": "images/mou-qualitek-collage.jpg", "cap": "Memorandum of Understanding between COEP Technological University and Qualitek Labs Limited, executed on 6 February 2026", "tag": "MoU · Qualitek Labs", "cat": "industry"}, {"id": "g17", "url": "images/department-group-05.jpg", "cap": "Faculty and participants at the department entrance", "tag": "Department", "cat": "department"}, {"id": "g18", "url": "images/felicitation-bouquet-01.jpg", "cap": "Welcoming a visiting dignitary to the department", "tag": "Welcome", "cat": "events"}, {"id": "g19", "url": "images/mou-signing-group.jpg", "cap": "After an industry Memorandum of Understanding signing at COEP Technological University", "tag": "MoU signing", "cat": "industry"}, {"id": "g20", "url": "images/felicitation-bouquet-02.jpg", "cap": "Presenting a bouquet to the chief guest in the department office", "tag": "Welcome", "cat": "events"}, {"id": "g21", "url": "images/department-gathering-office.jpg", "cap": "Department faculty and students at a felicitation in the department office", "tag": "Department", "cat": "events"}, {"id": "g22", "url": "images/department-group-06.jpg", "cap": "Faculty and research scholars at the department entrance", "tag": "Department", "cat": "department"}, {"id": "g23", "url": "images/department-group-07.jpg", "cap": "Group photograph with a visiting delegation at the department", "tag": "Department", "cat": "department"}, {"id": "g24", "url": "images/department-group-08.jpg", "cap": "Faculty and guests on the department steps", "tag": "Department", "cat": "department"}, {"id": "g25", "url": "images/department-group-09.jpg", "cap": "Department faculty with participants of a training programme", "tag": "Department", "cat": "department"}, {"id": "g26", "url": "images/faculty-meeting-hall.jpg", "cap": "Faculty and invited experts after a departmental meeting", "tag": "Meeting", "cat": "department"}, {"id": "g27", "url": "images/heritage-building-group.jpg", "cap": "With colleagues outside the heritage main building at COEP Technological University", "tag": "Campus", "cat": "department"}, {"id": "g28", "url": "images/classroom-session.jpg", "cap": "A session in progress in the department classroom", "tag": "Teaching", "cat": "department"}, {"id": "g29", "url": "images/department-group-10.jpg", "cap": "Faculty, staff and students of the department", "tag": "Department", "cat": "department"}, {"id": "g30", "url": "images/equipment-handover.jpg", "cap": "Handing over new instrumentation to the department laboratory", "tag": "Laboratory", "cat": "department"}, {"id": "g31", "url": "images/department-group-11.jpg", "cap": "Group photograph at the department entrance", "tag": "Department", "cat": "department"}, {"id": "g32", "url": "images/department-group-12.jpg", "cap": "Faculty and students of the Department of Metallurgy and Materials Engineering", "tag": "Department", "cat": "department"}]}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/htm@3.1.1/dist/htm.umd.js"></script>
+<script>
+(function(){
+const {useState,useEffect,useRef,useMemo,createContext,useContext} = React;
+const html = htm.bind(React.createElement);
+const RM = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+const SEED = JSON.parse(document.getElementById('seed').textContent);
+
+/* ---------- fixed profile data ---------- */
+const LINKS=[
+  ['Google Scholar','https://scholar.google.com/citations?user=LDBIezEAAAAJ&hl=en'],
+  ['ResearchGate','https://www.researchgate.net/profile/M-Kulthe'],
+  ['LinkedIn','https://www.linkedin.com/in/dr-manisha-kulthe-hargude-5a715535/'],
+  ['Vidwan','https://vidwan.inflibnet.ac.in/profile/146967'],
+  ['COEP faculty page','https://www.coeptech.ac.in/faculty/dr-manisha-g-kulthe/']
+];
+const AREAS=[
+  {t:'Polymer nanocomposites',g:'net',d:'Polymers reinforced with carbon nanotubes, MXenes, hexagonal boron nitride, MoS₂ and agro-waste silica, and how the filler changes their mechanical, creep and dynamic mechanical behaviour.',k:['MWCNT','MXene','h-BN','Creep','DMA']},
+  {t:'EMI shielding and radar absorption',g:'wave',d:'Conductive nanocomposites that reflect or absorb electromagnetic radiation, for electronics enclosures and radar-absorbing structures.',k:['EMI SE','PEK/MWCNT','RAM']},
+  {t:'Coatings and functional materials',g:'layers',d:'Anticorrosive coatings and plating, thermally conductive composites for heat management, and lead-reduced halide perovskites for optoelectronics.',k:['Anticorrosion','Perovskites','Thermal conductivity']},
+  {t:'Processing of metals and composites',g:'grain',d:'Heat treatment of steel, low and high pressure die casting, and additive manufacturing of fibre-reinforced polymers.',k:['Heat treatment','LPDC/HPDC','Additive manufacturing']}
+];
+const ROUTES=[['home','Home'],['research','Research'],['publications','Publications'],['projects','Projects'],['gallery','Gallery'],['profile','Profile'],['awards','Awards'],['contact','Contact']];
+const CATS=[['events','Events & felicitations'],['department','Department & campus'],['industry','Industry & MoUs'],['research','Research highlights']];
+
+/* ---------- icons ---------- */
+const PATHS={
+  sun:'M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10ZM12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4',
+  moon:'M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z',
+  menu:'M3 6h18M3 12h18M3 18h18', x:'M18 6 6 18M6 6l12 12',
+  left:'M15 18l-6-6 6-6', right:'M9 18l6-6-6-6',
+  search:'M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM21 21l-4.3-4.3',
+  ext:'M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'
+};
+const Icon=({n})=>html`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d=${PATHS[n]}/></svg>`;
+
+/* small line glyphs drawn from each research area's own imagery */
+function Glyph({g}){
+  const s={fill:'none',stroke:'currentColor',strokeWidth:1.4,strokeLinecap:'round'};
+  if(g==='net') return html`<svg viewBox="0 0 44 44" aria-hidden="true">
+    <path ...${s} d="M4 30c6-4 9 2 14-2s6-10 12-9 8 6 10 4"/><path ...${s} d="M4 16c5 3 8-3 13 0s8 9 13 7 7-4 10-2"/>
+    <path ...${s} strokeWidth="2.2" style=${{stroke:'var(--copper)'}} d="M10 8l10 26M26 6l-4 30M33 12l-14 20"/></svg>`;
+  if(g==='wave') return html`<svg viewBox="0 0 44 44" aria-hidden="true">
+    <path ...${s} d="M2 22c3-8 6-8 9 0s6 8 9 0"/><path ...${s} d="M26 8v28"/><path ...${s} strokeWidth="2.2" style=${{stroke:'var(--copper)'}} d="M29 8v28"/>
+    <path ...${s} strokeDasharray="2 3" d="M34 22c2-4 4-4 6 0"/></svg>`;
+  if(g==='layers') return html`<svg viewBox="0 0 44 44" aria-hidden="true">
+    <path ...${s} d="M4 32h36M4 26h36"/><path ...${s} strokeWidth="2.2" style=${{stroke:'var(--copper)'}} d="M4 20h36"/>
+    <path ...${s} d="M10 14l4-6 4 6M26 14l4-6 4 6"/></svg>`;
+  return html`<svg viewBox="0 0 44 44" aria-hidden="true">
+    <path ...${s} d="M4 6h36v32H4zM4 20l10-4 8 6 10-8 8 4M14 16l2 22M22 22l-4 16M32 14l-2 24"/>
+    <path ...${s} strokeWidth="2.2" style=${{stroke:'var(--copper)'}} d="M22 22l10-8"/></svg>`;
+}
+
+/* ---------- context ---------- */
+const Ctx=createContext({c:SEED});
+const useSite=()=>useContext(Ctx);
+const Author=({a})=>html`<span>${String(a).split(/(M\. G\. Kulthe|M\. Kulthe|Manisha Kulthe)/).map((x,i)=>/Kulthe/.test(x)?html`<b key=${i}>${x}</b>`:x)}</span>`;
+const fmtCr=l=>'₹'+(l/100).toFixed(2);
+
+/* ---------- ambient polymer field (hero background) ---------- */
+function mulberry(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function cssVar(el,n){return getComputedStyle(el).getPropertyValue(n).trim()||'#888'}
+
+function ChainField({host}){
+  const ref=useRef(null);
+  useEffect(()=>{
+    const cv=ref.current; if(!cv) return; const ctx=cv.getContext('2d'); if(!ctx) return;
+    const r=mulberry(1854);
+    const chains=Array.from({length:18},()=>({x:r(),y:r(),a:r()*Math.PI*2,s:r()*100,n:34+Math.floor(r()*26),k:Array.from({length:60},()=>(r()-.5)*0.9),v:(r()-.5)*0.00004}));
+    const rods=Array.from({length:26},()=>({x:r(),y:r(),a:r()*Math.PI,v:(r()-.5)*0.0002}));
+    let W=0,H=0,dpr=1,raf=0,vis=true,last=0; const ptr={x:-1e4,y:-1e4};
+    const size=()=>{const b=cv.getBoundingClientRect();dpr=Math.min(2,window.devicePixelRatio||1);W=b.width;H=b.height;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0)};
+    const draw=t=>{
+      ctx.clearRect(0,0,W,H);
+      const ink=cssVar(document.documentElement,'--ink'), cu=cssVar(document.documentElement,'--copper');
+      ctx.lineCap='round'; ctx.lineJoin='round';
+      ctx.strokeStyle=ink; ctx.globalAlpha=.09; ctx.lineWidth=1.3;
+      const seg=Math.max(8,W/120);
+      for(const c of chains){
+        let x=((c.x+c.v*t)%1+1)%1*W, y=c.y*H, a=c.a;
+        ctx.beginPath(); ctx.moveTo(x,y);
+        for(let i=0;i<c.n;i++){
+          a+=c.k[i]+0.22*Math.sin(t*0.0006+i*0.55+c.s);
+          x+=Math.cos(a)*seg; y+=Math.sin(a)*seg;
+          const dx=x-ptr.x, dy=y-ptr.y, d2=dx*dx+dy*dy;
+          let px=x,py=y; if(d2<14400){const f=(1-d2/14400)*22/Math.sqrt(d2+1); px+=dx*f; py+=dy*f;}
+          ctx.lineTo(px,py);
+        }
+        ctx.stroke();
+      }
+      ctx.strokeStyle=cu; ctx.globalAlpha=.2; ctx.lineWidth=1.8;
+      const L=Math.max(26,W/34);
+      for(const d of rods){
+        const a=d.a+t*d.v, x=d.x*W, y=d.y*H;
+        ctx.beginPath(); ctx.moveTo(x-Math.cos(a)*L/2,y-Math.sin(a)*L/2); ctx.lineTo(x+Math.cos(a)*L/2,y+Math.sin(a)*L/2); ctx.stroke();
+      }
+      ctx.globalAlpha=1;
+    };
+    const loop=t=>{ raf=requestAnimationFrame(loop); if(!vis||document.hidden) return; if(t-last<33) return; last=t; draw(t); };
+    size(); draw(0);
+    const ro=new ResizeObserver(()=>{size();draw(last)}); ro.observe(cv);
+    const io=new IntersectionObserver(es=>{vis=es[0].isIntersecting}); io.observe(cv);
+    const h=host&&host.current;
+    const mv=e=>{const b=cv.getBoundingClientRect();ptr.x=e.clientX-b.left;ptr.y=e.clientY-b.top};
+    const lv=()=>{ptr.x=-1e4;ptr.y=-1e4};
+    if(h){h.addEventListener('pointermove',mv);h.addEventListener('pointerleave',lv)}
+    const mo=new MutationObserver(()=>draw(last)); mo.observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+    if(!RM) raf=requestAnimationFrame(loop);
+    return ()=>{cancelAnimationFrame(raf);ro.disconnect();io.disconnect();mo.disconnect();if(h){h.removeEventListener('pointermove',mv);h.removeEventListener('pointerleave',lv)}};
+  },[]);
+  return html`<canvas className="field" ref=${ref} aria-hidden="true"></canvas>`;
+}
+
+/* ---------- percolation model ---------- */
+const PW=600, PH=380, PL=60, NMAX=1000, PER_WT=220, MAXWT=4.5;
+function orient(ax,ay,bx,by,cx,cy){return (bx-ax)*(cy-ay)-(by-ay)*(cx-ax)}
+function crosses(p,q){
+  const d1=orient(p[0],p[1],p[2],p[3],q[0],q[1]), d2=orient(p[0],p[1],p[2],p[3],q[2],q[3]);
+  const d3=orient(q[0],q[1],q[2],q[3],p[0],p[1]), d4=orient(q[0],q[1],q[2],q[3],p[2],p[3]);
+  return d1*d2<0 && d3*d4<0;
+}
+function buildSample(seed){
+  const r=mulberry(seed), rods=[];
+  for(let i=0;i<NMAX;i++){const cx=r()*PW, cy=r()*PH, a=r()*Math.PI, dx=Math.cos(a)*PL/2, dy=Math.sin(a)*PL/2; rods.push([cx-dx,cy-dy,cx+dx,cy+dy]);}
+  const adj=rods.map(()=>[]), grid=new Map(), key=(i,j)=>i+','+j, cell=s=>[Math.floor((s[0]+s[2])/2/PL),Math.floor((s[1]+s[3])/2/PL)];
+  rods.forEach((s,i)=>{const [a,b]=cell(s),k=key(a,b); if(!grid.has(k)) grid.set(k,[]); grid.get(k).push(i);});
+  rods.forEach((s,i)=>{const [a,b]=cell(s);
+    for(let u=-1;u<=1;u++) for(let v=-1;v<=1;v++){const L=grid.get(key(a+u,b+v)); if(!L) continue;
+      for(const j of L){ if(j<=i) continue; if(crosses(s,rods[j])){adj[i].push(j);adj[j].push(i);} } } });
+  const touchL=rods.map(s=>Math.min(s[0],s[2])<=0), touchR=rods.map(s=>Math.max(s[0],s[2])>=PW);
+  const sample={rods,adj,touchL,touchR};
+  // threshold: spanning is monotonic in N because rods are added in a fixed order
+  let lo=0, hi=NMAX;
+  if(!analyse(sample,NMAX).span){ sample.nc=null; } else { while(lo<hi){const m=(lo+hi)>>1; if(analyse(sample,m).span) hi=m; else lo=m+1;} sample.nc=lo; }
+  return sample;
+}
+function analyse(S,N){
+  const p=new Int32Array(N+2); for(let i=0;i<N+2;i++) p[i]=i;
+  const f=x=>{while(p[x]!==x){p[x]=p[p[x]];x=p[x]}return x}, u=(a,b)=>{a=f(a);b=f(b);if(a!==b)p[a]=b};
+  const L=N, R=N+1;
+  for(let i=0;i<N;i++){ if(S.touchL[i]) u(i,L); if(S.touchR[i]) u(i,R); for(const j of S.adj[i]) if(j<i) u(i,j); }
+  const span=N>0 && f(L)===f(R), root=f(L), size=new Map(); let largest=0;
+  for(let i=0;i<N;i++){const k=f(i); const s=(size.get(k)||0)+1; size.set(k,s); if(s>largest) largest=s;}
+  const on=new Uint8Array(N); if(span) for(let i=0;i<N;i++) if(f(i)===root) on[i]=1;
+  return {span,on,largest,inNet:span?size.get(root):0};
+}
+const logSigma=(phi,pc)=> pc==null||phi<pc ? -13+0.6*Math.pow(phi/(pc||MAXWT),3) : Math.max(-12.4, Math.log10(100*Math.pow(phi-pc,2)+1e-13));
+
+function Plot({phi,pc}){
+  const W=340,H=210,l=44,r=10,t=12,b=34, x=v=>l+(v/MAXWT)*(W-l-r), y=v=>t+(3-v)/17*(H-t-b);
+  let d=''; for(let i=0;i<=240;i++){const v=i/240*MAXWT; d+=(i?'L':'M')+x(v).toFixed(1)+','+y(logSigma(v,pc)).toFixed(1);}
+  const yt=[-12,-8,-4,0];
+  return html`<svg className="plot" viewBox=${'0 0 '+W+' '+H} role="img" aria-label=${'Conductivity against nanotube loading. Threshold near '+(pc==null?'n/a':pc.toFixed(2))+' wt%.'}>
+    ${pc!=null && html`<rect className="cond" x=${x(pc)} y=${t} width=${x(MAXWT)-x(pc)} height=${H-t-b}/>`}
+    ${yt.map(v=>html`<g key=${v}><line className="grid" x1=${l} x2=${W-r} y1=${y(v)} y2=${y(v)}/><text x=${l-6} y=${y(v)+3} textAnchor="end">${'10'}<tspan dy="-4" fontSize="8">${v}</tspan></text></g>`)}
+    <line className="ax" x1=${l} x2=${W-r} y1=${H-b} y2=${H-b}/><line className="ax" x1=${l} x2=${l} y1=${t} y2=${H-b}/>
+    ${[0,1,2,3,4].map(v=>html`<text key=${v} x=${x(v)} y=${H-b+14} textAnchor="middle">${v}</text>`)}
+    <text x=${(l+W-r)/2} y=${H-4} textAnchor="middle">MWCNT loading (wt%)</text>
+    <text transform=${'translate(10,'+((t+H-b)/2)+') rotate(-90)'} textAnchor="middle">σ (S/m)</text>
+    ${pc!=null && html`<g><line className="pc" x1=${x(pc)} x2=${x(pc)} y1=${t} y2=${H-b}/><text className="pc-t" x=${x(pc)+5} y=${H-b-8}>${'φc ≈ '+pc.toFixed(2)+' wt%'}</text></g>`}
+    <path className="curve" d=${d}/>
+    <circle className="dot" cx=${x(phi)} cy=${y(logSigma(phi,pc))} r="5.5"/>
+  </svg>`;
+}
+
+function Percolation(){
+  const [seed,setSeed]=useState(2020);
+  const [wt,setWt]=useState(0.9);
+  const [sweep,setSweep]=useState(false);
+  const S=useMemo(()=>buildSample(seed),[seed]);
+  const N=Math.min(NMAX,Math.round(wt*PER_WT));
+  const A=useMemo(()=>analyse(S,N),[S,N]);
+  const pc=S.nc==null?null:S.nc/PER_WT;
+  const cv=useRef(null), live=useRef({S,N,A});
+  live.current={S,N,A};
+
+  useEffect(()=>{
+    const el=cv.current; if(!el) return; const ctx=el.getContext('2d'); if(!ctx) return;
+    const pad=14, VW=PW+pad*2; let raf=0, vis=true;
+    const draw=t=>{
+      const {S,N,A}=live.current, root=document.documentElement;
+      const ink=cssVar(root,'--ink'), mut=cssVar(root,'--muted'), cu=cssVar(root,'--copper'), tint=cssVar(root,'--tint'), surf=cssVar(root,'--surface');
+      const b=el.getBoundingClientRect(), dpr=Math.min(2,window.devicePixelRatio||1);
+      if(el.width!==Math.round(b.width*dpr)){el.width=Math.round(b.width*dpr); el.height=Math.round(b.width*dpr*PH/VW);}
+      const s=el.width/VW; ctx.setTransform(1,0,0,1,0,0); ctx.clearRect(0,0,el.width,el.height); ctx.setTransform(s,0,0,s,pad*s,0);
+      ctx.fillStyle=tint; ctx.fillRect(0,0,PW,PH);
+      ctx.fillStyle=cu; ctx.fillRect(-pad,0,pad-3,PH); ctx.fillRect(PW+3,0,pad-3,PH);
+      ctx.save(); ctx.beginPath(); ctx.rect(0,0,PW,PH); ctx.clip(); ctx.lineCap='round';
+      ctx.strokeStyle=mut; ctx.globalAlpha=.55; ctx.lineWidth=1.6; ctx.beginPath();
+      for(let i=0;i<N;i++){ if(A.on[i]) continue; const r=S.rods[i]; ctx.moveTo(r[0],r[1]); ctx.lineTo(r[2],r[3]); }
+      ctx.stroke(); ctx.globalAlpha=1;
+      if(A.span){
+        ctx.strokeStyle=cu; ctx.lineWidth=2.8; ctx.beginPath();
+        for(let i=0;i<N;i++){ if(!A.on[i]) continue; const r=S.rods[i]; ctx.moveTo(r[0],r[1]); ctx.lineTo(r[2],r[3]); }
+        ctx.stroke();
+        if(!RM){ ctx.strokeStyle=surf; ctx.lineWidth=1.3; ctx.setLineDash([5,16]); ctx.lineDashOffset=-(t*0.05%21); ctx.stroke(); ctx.setLineDash([]); }
+      }
+      ctx.restore();
+    };
+    const loop=t=>{ raf=requestAnimationFrame(loop); if(!vis||document.hidden) return; draw(t); };
+    const io=new IntersectionObserver(es=>{vis=es[0].isIntersecting}); io.observe(el);
+    const ro=new ResizeObserver(()=>draw(performance.now())); ro.observe(el);
+    const mo=new MutationObserver(()=>draw(performance.now())); mo.observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+    draw(0); if(!RM) raf=requestAnimationFrame(loop);
+    el._redraw=draw;
+    return ()=>{cancelAnimationFrame(raf);io.disconnect();ro.disconnect();mo.disconnect();};
+  },[]);
+  useEffect(()=>{ const el=cv.current; if(el&&el._redraw) el._redraw(performance.now()); },[S,N,A]);
+
+  useEffect(()=>{
+    if(!sweep) return; let raf=0, t0=0; const from=0, dur=7000;
+    const step=t=>{ if(!t0)t0=t; const k=Math.min(1,(t-t0)/dur); setWt(+(from+k*MAXWT).toFixed(2)); if(k<1) raf=requestAnimationFrame(step); else setSweep(false); };
+    raf=requestAnimationFrame(step); return ()=>cancelAnimationFrame(raf);
+  },[sweep]);
+
+  return html`<div className="lab">
+    <div className="lab-stage">
+      <canvas ref=${cv} role="img" aria-label=${N+' nanotubes in an insulating matrix. '+(A.span?'A connected network joins the electrodes.':'No connected path between the electrodes.')}></canvas>
+      <div className="stage-labels"><span>Electrode</span><span className="mid">Polymer matrix with dispersed MWCNTs</span><span>Electrode</span></div>
+    </div>
+    <div className="lab-side">
+      <span className=${'state'+(A.span?' on':'')} aria-live="polite"><i></i>${A.span?'Conducting network formed':'Insulating'}</span>
+      <dl className="readout">
+        <div><dt>Nanotubes</dt><dd>${N}</dd></div>
+        <div><dt>Largest cluster</dt><dd>${A.largest}</dd></div>
+        <div><dt>In network</dt><dd>${A.inNet}</dd></div>
+      </dl>
+      <div className="slider">
+        <label htmlFor="loading">MWCNT loading <span>${wt.toFixed(2)} wt%</span></label>
+        <input id="loading" type="range" min="0" max=${MAXWT} step="0.01" value=${wt} onInput=${e=>{setSweep(false);setWt(+e.target.value)}}/>
+      </div>
+      <div className="ctrl">
+        <button className="btn solid" onClick=${()=>{setWt(0);setSweep(true)}} disabled=${sweep}>${sweep?'Sweeping…':'Run a loading sweep'}</button>
+        <button className="btn" onClick=${()=>{setSweep(false);setSeed(s=>s+1)}}>New sample</button>
+      </div>
+      <${Plot} phi=${wt} pc=${pc}/>
+    </div>
+    <p className="lab-note">An illustrative two-dimensional model: nanotubes are dropped at random into an insulating matrix, in the same order every time for a given sample. Below the percolation threshold φc the clusters stay isolated and the composite insulates. At φc one cluster first touches both electrodes, and conductivity rises by many orders of magnitude, following σ ∝ (φ − φc)<sup>t</sup> with t = 2. The same transition governs her measurements of electrical conductivity and EMI shielding in <a href="https://doi.org/10.1007/s10854-020-04359-x" target="_blank" rel="noopener">PEK/MWCNT nanocomposites</a>.</p>
+  </div>`;
+}
+
+/* ---------- gallery pieces ---------- */
+function Lightbox({items,i,setI,close}){
+  const n=items.length, g=items[i], btn=useRef(null);
+  useEffect(()=>{ btn.current&&btn.current.focus();
+    const k=e=>{ if(e.key==='Escape')close(); if(e.key==='ArrowRight')setI((i+1)%n); if(e.key==='ArrowLeft')setI((i-1+n)%n); };
+    addEventListener('keydown',k); const o=document.body.style.overflow; document.body.style.overflow='hidden';
+    return ()=>{removeEventListener('keydown',k);document.body.style.overflow=o}; },[i,n]);
+  return html`<div className="lb" role="dialog" aria-modal="true" aria-label="Photo viewer" onClick=${close}>
+    <div className="lb-top" onClick=${e=>e.stopPropagation()}><span className="num">${(i+1)+' / '+n}</span><button ref=${btn} onClick=${close} aria-label="Close"><${Icon} n="x"/></button></div>
+    <div className="lb-img"><img src=${g.url} alt=${g.cap} onClick=${e=>e.stopPropagation()}/></div>
+    <div className="lb-cap" onClick=${e=>e.stopPropagation()}>
+      <button onClick=${()=>setI((i-1+n)%n)} aria-label="Previous photo"><${Icon} n="left"/></button>
+      <span>${g.cap}</span>
+      <button onClick=${()=>setI((i+1)%n)} aria-label="Next photo"><${Icon} n="right"/></button>
+    </div>
+  </div>`;
+}
+
+/* full-width moments banner at the top of the home page */
+function Banner({items,total}){
+  const [i,setI]=useState(0); const [lb,setLb]=useState(-1); const [tall,setTall]=useState({}); const n=items.length;
+  useEffect(()=>{ if(i>=n) setI(0); },[n]);
+  if(!n) return null;
+  const cur=Math.min(i,n-1), g=items[cur];
+  const go=d=>setI((cur+d+n)%n);
+  const mark=(id,e)=>{const im=e.target; if(im.naturalHeight>im.naturalWidth*0.9) setTall(t=>t[id]?t:{...t,[id]:1});};
+  return html`<section className="banner" aria-roledescription="carousel" aria-label="Moments">
+    <div className="b-stage">
+    ${items.map((x,k)=>{ const near=k===cur||k===(cur+1)%n||k===(cur-1+n)%n;
+      return html`<div key=${x.id||k} className=${'slide'+(k===cur?' on':'')+(tall[x.id]?' tall':'')} aria-hidden=${k!==cur}>
+        ${near && html`<${React.Fragment}><img className="bg" src=${x.url} alt=""/><img className="fg" src=${x.url} alt=${x.cap} onLoad=${e=>mark(x.id,e)}/></${React.Fragment}>`}
+      </div>`;})}
+    <button className="b-open" onClick=${()=>setLb(cur)} aria-label=${'Open photo: '+g.cap}></button>
+    ${n>1 && html`<div className="b-prog" aria-hidden="true">${items.map((x,k)=>html`<span key=${k} className=${k<cur?'done':''}>${k===cur && !RM && html`<i key=${'p'+cur} onAnimationEnd=${()=>go(1)}></i>`}</span>`)}</div>`}
+    </div>
+    <div className="b-cap"><div className="wrap b-cap-in">
+      <div className="b-text">
+        <span className="b-tag">${g.tag||'Moments'}</span>
+        <p key=${'c'+cur}>${g.cap}</p>
+      </div>
+      <div className="b-ctrl">
+        <span className="b-count num">${String(cur+1).padStart(2,'0')+' / '+String(n).padStart(2,'0')}</span>
+        <button onClick=${()=>go(-1)} aria-label="Previous photo"><${Icon} n="left"/></button>
+        <button onClick=${()=>go(1)} aria-label="Next photo"><${Icon} n="right"/></button>
+        <a className="b-all" href="#gallery">Gallery<span className="num">${total}</span></a>
+      </div>
+    </div></div>
+    ${lb>=0 && html`<${Lightbox} items=${items} i=${lb} setI=${setLb} close=${()=>setLb(-1)}/>`}
+  </section>`;
+}
+
+/* institutional masthead, as on COEP faculty sites */
+function Masthead(){
+  return html`<header className="masthead"><div className="wrap mast-in">
+    <a className="mast-brand" href="https://www.coeptech.ac.in/" target="_blank" rel="noopener">
+      <span className="logo-plate"><img src="images/coep-logo.png" alt="COEP Technological University crest, established 1854"/></span>
+      <span className="mast-text"><b>COEP Technological University</b><span>A Unitary Public University of the Government of Maharashtra (formerly College of Engineering Pune)</span></span>
+    </a>
+    <span className="mast-dept">Department of Metallurgy and Materials Engineering</span>
+  </div></header>`;
+}
+
+/* ---------- shared blocks ---------- */
+function Areas(){
+  return html`<div className="areas">${AREAS.map(a=>html`<article className="area" key=${a.t}>
+    <${Glyph} g=${a.g}/>
+    <div><h3>${a.t}</h3><p>${a.d}</p><ul className="tags">${a.k.map(k=>html`<li key=${k}>${k}</li>`)}</ul></div>
+  </article>`)}</div>`;
+}
+function PubItem({p}){
+  return html`<li className="pub">
+    <span className="yr">${p.y}</span>
+    <div>
+      <h3>${p.t}</h3>
+      <p className="au"><${Author} a=${p.a}/></p>
+      <p className="jr">${p.j}</p>
+      <div className="meta"><span className="kind"><i className=${'k-'+p.k}></i>${p.k}</span>
+        ${p.u && html`<a href=${p.u} target="_blank" rel="noopener">${p.u.includes('doi.org')?'doi:'+p.u.split('doi.org/')[1]:'View article'}</a>`}</div>
+    </div>
+  </li>`;
+}
+function PageHead({title,lede}){ return html`<header className="page-head"><div className="wrap"><h1 className="rise">${title}</h1>${lede&&html`<p className="rise" style=${{'--d':'.08s'}}>${lede}</p>`}</div></header>`; }
+
+/* ---------- pages ---------- */
+function Home(){
+  const {c}=useSite(); const hero=useRef(null);
+  const fund=c.projects.reduce((s,p)=>s+(+p.amt||0),0);
+  const shots=c.gallery.filter(g=>g.cat!=='research').slice(0,10);
+  return html`<div className="page">
+    <${Banner} items=${shots} total=${c.gallery.length}/>
+    <section className="hero" ref=${hero}>
+      <${ChainField} host=${hero}/>
+      <div className="wrap hero-grid">
+        <div>
+          <p className="role rise"><b>Head of Department</b><span>Metallurgy and Materials Engineering, COEP Technological University, Pune</span></p>
+          <h1 className="name"><span className="pre rise" style=${{'--d':'.05s'}}>Dr</span><span className="ln rise" style=${{'--d':'.12s'}}>Manisha G.</span><span className="ln rise" style=${{'--d':'.2s'}}>Kulthe</span></h1>
+          <p className="thesis rise" style=${{'--d':'.32s'}}>${c.tagline}</p>
+          <div className="actions rise" style=${{'--d':'.42s'}}><a className="btn solid" href="#research">Explore the research</a><a className="btn" href="#publications">Publications</a></div>
+          <dl className="sheet rise" style=${{'--d':'.52s'}}>
+            <div><dt>Teaching at COEP</dt><dd className="num">2005<small>onward</small></dd></div>
+            <div><dt>Publications</dt><dd className="num">${c.pubs.length}</dd></div>
+            <div className="hot"><dt>Sponsored research</dt><dd className="num">${fmtCr(fund)}<small>crore</small></dd></div>
+            <div><dt>Funded projects</dt><dd className="num">${c.projects.length}</dd></div>
+          </dl>
+        </div>
+        <figure className="portrait">
+          <div className="frame">
+            ${c.portrait?html`<img src=${c.portrait} alt="Dr Manisha G. Kulthe"/>`:html`<div className="ph">MK</div>`}
+            <div className="trace" aria-hidden="true"><i className="t"></i><i className="r"></i><i className="b"></i><i className="l"></i></div>
+          </div>
+          <figcaption><span className="fig">Fig. 1</span>Delivering an invited lecture on polymer composites for automotive applications at COEP Technological University.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section className="section"><div className="wrap side">
+      <div className="side-head"><h2>About</h2></div>
+      <div className="prose">${c.about.map((p,i)=>html`<p key=${i}>${p}</p>`)}</div>
+    </div></section>
+
+    <section className="section"><div className="wrap side">
+      <div className="side-head"><h2>Research in motion</h2><p>Drag the loading, or run a sweep, and watch an insulating polymer become a conductor once the nanotubes connect.</p></div>
+      <${Percolation}/>
+    </div></section>
+
+    <section className="section"><div className="wrap side">
+      <div className="side-head"><h2>Research areas</h2><p><a href="#research">All research</a></p></div>
+      <${Areas}/>
+    </div></section>
+
+    <section className="section"><div className="wrap side">
+      <div className="side-head"><h2>Recent publications</h2><p><a href="#publications">All ${c.pubs.length} publications</a></p></div>
+      <ul className="pubs">${[...c.pubs].sort((a,b)=>b.y-a.y).slice(0,4).map((p,i)=>html`<${PubItem} key=${i} p=${p}/>`)}</ul>
+    </div></section>
+
+    <section className="section"><div className="wrap">
+      <div className="invite">
+        <div><h2>Looking for a project in composites?</h2><p>B.Tech, M.Tech and Ph.D. students, and industry partners interested in nanocomposites, coatings or EMI shielding are welcome to get in touch.</p></div>
+        <a className="btn solid" href="#contact">Contact details</a>
+      </div>
+    </div></section>
+  </div>`;
+}
+
+function Research(){
+  const {c}=useSite(); const [lb,setLb]=useState(-1);
+  const figs=c.gallery.filter(g=>g.cat==='research');
+  return html`<div className="page">
+    <${PageHead} title="Research" lede="Polymer composites and nanocomposites, and the processing of metals, with applications from electronics enclosures to corrosion protection."/>
+    <section className="section"><div className="wrap side"><div className="side-head"><h2>Areas</h2></div><${Areas}/></div></section>
+    <section className="section"><div className="wrap side"><div className="side-head"><h2>Percolation, interactively</h2><p>The insulator-to-conductor transition at the centre of her nanocomposite work.</p></div><${Percolation}/></div></section>
+    <section className="section"><div className="wrap side"><div className="side-head"><h2>Highlights from papers</h2><p>Key figures and results from published work.</p></div>
+      ${figs.length? html`<div className="masonry">${figs.map((g,k)=>html`<figure className="tile" key=${g.id} onClick=${()=>setLb(k)}><img src=${g.url} alt=${g.cap} loading="lazy"/><figcaption><span className="fig">${'Fig. '+(k+1)}</span>${g.cap}</figcaption></figure>`)}</div>`
+        : html`<div className="empty"><b>Figures from published papers will appear here</b>Add them in the editor under Gallery photos, with the section set to Research highlights.</div>`}
+    </div></section>
+    ${lb>=0 && html`<${Lightbox} items=${figs} i=${lb} setI=${setLb} close=${()=>setLb(-1)}/>`}
+  </div>`;
+}
+
+function Record({pubs,year,setYear}){
+  const ys=pubs.map(p=>+p.y), y0=Math.min(...ys,2006), y1=Math.max(...ys,new Date().getFullYear());
+  const years=[]; for(let y=y0;y<=y1;y++) years.push(y);
+  const by={}; pubs.forEach(p=>{(by[p.y]=by[p.y]||[]).push(p)});
+  const maxN=Math.max(1,...Object.values(by).map(a=>a.length));
+  const cw=30, l=8, W=l*2+years.length*cw, R=6, gap=15, H=24+maxN*gap+10;
+  return html`<div className="record">
+    <svg viewBox=${'0 0 '+W+' '+H} role="img" aria-label="Publications per year">
+      ${years.map((y,k)=>{ const x=l+k*cw, list=by[y]||[];
+        return html`<g key=${y} onClick=${()=>list.length&&setYear(year===y?null:y)}>
+          <rect className=${'col'+(year===y?' sel':'')} x=${x+1} y="0" width=${cw-2} height=${H-18} rx="3"/>
+          ${list.map((p,j)=>html`<circle key=${j} className=${'d-'+p.k} cx=${x+cw/2} cy=${H-26-j*gap} r=${R}/>`)}
+          ${(y%2===0||list.length>0) && html`<text x=${x+cw/2} y=${H-4} textAnchor="middle">${"'"+String(y).slice(2)}</text>`}
+        </g>`;})}
+      <line className="ax" x1=${l} x2=${W-l} y1=${H-17} y2=${H-17}/>
+    </svg>
+    <div className="record-key"><span className="kind"><i className="k-Journal"></i>Journal</span><span className="kind"><i className="k-Conference"></i>Conference</span><span className="kind"><i className="k-Chapter"></i>Book chapter</span><span>Select a year to filter</span></div>
+  </div>`;
+}
+function Publications(){
+  const {c}=useSite(); const [q,setQ]=useState(''); const [kind,setKind]=useState('All'); const [year,setYear]=useState(null);
+  const list=useMemo(()=>[...c.pubs].sort((a,b)=>b.y-a.y).filter(p=>(kind==='All'||p.k===kind)&&(year==null||+p.y===year)&&(p.t+' '+p.a+' '+p.j).toLowerCase().includes(q.toLowerCase())),[c.pubs,q,kind,year]);
+  const count=k=>k==='All'?c.pubs.length:c.pubs.filter(p=>p.k===k).length;
+  return html`<div className="page">
+    <${PageHead} title="Publications" lede=${c.pubs.length+' journal articles, conference papers and book chapters, from batch annealing of steel in 2006 to radar-absorbing nanocomposites in 2026.'}/>
+    <section className="section"><div className="wrap">
+      <${Record} pubs=${c.pubs} year=${year} setYear=${setYear}/>
+      <div className="tools">
+        <label className="search"><span className="sr">Search publications</span><${Icon} n="search"/><input id="pub-search" value=${q} onInput=${e=>setQ(e.target.value)} placeholder="Search by title, co-author or journal"/></label>
+        <div className="chips">${['All','Journal','Conference','Chapter'].map(k=>html`<button key=${k} className="chip" aria-pressed=${kind===k} onClick=${()=>setKind(k)}>${k}<small>${count(k)}</small></button>`)}</div>
+        ${year!=null && html`<button className="chip" aria-pressed="true" onClick=${()=>setYear(null)}>${year} ×</button>`}
+      </div>
+      ${list.length? html`<ul className="pubs">${list.map((p,i)=>html`<${PubItem} key=${p.t+i} p=${p}/>`)}</ul>`
+        : html`<div className="empty"><b>No publications match</b>Try a different word, or clear the type and year filters.</div>`}
+    </div></section>
+  </div>`;
+}
+
+function Projects(){
+  const {c}=useSite(); const items=c.projects, max=Math.max(1,...items.map(p=>+p.amt||0)), total=items.reduce((s,p)=>s+(+p.amt||0),0);
+  return html`<div className="page">
+    <${PageHead} title="Funded projects" lede="Sponsored research from national agencies and industry, from polymer composite characterisation to perovskite optoelectronics."/>
+    <section className="section"><div className="wrap side">
+      <div className="side-head"><div className="total"><b className="num">${fmtCr(total)}</b><span>crore across ${items.length} projects</span></div><p>Bars are drawn to scale against the largest grant.</p></div>
+      <ul className="funds">${items.map(p=>html`<li key=${p.t} className=${'fund'+(p.on?' on':'')}>
+        <div><h3>${p.t}<span className=${'flag'+(p.on?'':' done')}>${p.on?'Ongoing':'Completed'}</span></h3><p className="by">${p.a} · ${p.y}</p></div>
+        <div className="amt num">₹${p.amt}<small>lakh</small></div>
+        <div className="bar" aria-hidden="true"><i style=${{width:((+p.amt||0)/max*100)+'%'}}></i></div>
+      </li>`)}</ul>
+    </div></section>
+  </div>`;
+}
+
+function Gallery(){
+  const {c}=useSite(); const [cat,setCat]=useState('all'); const [lb,setLb]=useState(-1);
+  const items=c.gallery.filter(g=>cat==='all'||g.cat===cat);
+  const n=k=>k==='all'?c.gallery.length:c.gallery.filter(g=>g.cat===k).length;
+  return html`<div className="page">
+    <${PageHead} title="Gallery" lede="Lectures, felicitations, industry partnerships, department life, and figures from published research."/>
+    <section className="section"><div className="wrap">
+      <div className="tools"><div className="chips">${[['all','All']].concat(CATS).map(([v,l])=>html`<button key=${v} className="chip" aria-pressed=${cat===v} onClick=${()=>setCat(v)}>${l}<small>${n(v)}</small></button>`)}</div></div>
+      ${items.length? html`<div className="masonry">${items.map((g,k)=>html`<figure className="tile" key=${g.id||k} onClick=${()=>setLb(k)}>
+          <img src=${g.url} alt=${g.cap} loading="lazy"/>
+          <figcaption>${g.tag&&html`<span className="fig">${g.tag}</span>`}${g.cap}</figcaption></figure>`)}</div>`
+        : html`<div className="empty"><b>Nothing in this section yet</b>${cat==='research'?'Figures and results from published papers will appear here.':'Photos added in the editor will appear here.'}</div>`}
+      ${lb>=0 && html`<${Lightbox} items=${items} i=${lb} setI=${setLb} close=${()=>setLb(-1)}/>`}
+    </div></section>
+  </div>`;
+}
+
+function Timeline({items}){ return html`<ol className="tl">${items.map(it=>html`<li key=${it.t} className=${it.now?'now':''}><span className="when">${it.y}</span><h3>${it.t}</h3><p>${it.s}</p></li>`)}</ol>`; }
+function Profile(){
+  const {c}=useSite();
+  return html`<div className="page">
+    <${PageHead} title="Profile" lede="More than twenty years of teaching at COEP, after a year of industrial research at TRDDC, Pune."/>
+    <section className="section"><div className="wrap cols2">
+      <div><h2>Experience</h2><${Timeline} items=${c.exp}/></div>
+      <div><h2>Qualifications</h2><${Timeline} items=${c.qual}/></div>
+    </div></section>
+  </div>`;
+}
+function Awards(){
+  const {c}=useSite();
+  return html`<div className="page">
+    <${PageHead} title="Awards and memberships"/>
+    <section className="section"><div className="wrap side"><div className="side-head"><h2>Awards</h2></div>
+      <ul className="awards">${c.awards.map(a=>html`<li key=${a.t}><span className="when">${a.y}</span><div><h3>${a.t}</h3><p>${a.s}</p></div></li>`)}</ul>
+    </div></section>
+    <section className="section"><div className="wrap side"><div className="side-head"><h2>Professional bodies</h2></div>
+      <div className="members">${c.members.map(m=>html`<div key=${m.t}><b>${m.t}</b><span>${m.s}, since ${m.y}</span></div>`)}</div>
+    </div></section>
+  </div>`;
+}
+function Copy({text}){
+  const [ok,setOk]=useState(false); const ref=useRef(null);
+  const select=()=>{try{const r=document.createRange();r.selectNodeContents(ref.current);const s=getSelection();s.removeAllRanges();s.addRange(r);}catch(e){}};
+  const go=()=>{ const done=()=>{setOk(true);setTimeout(()=>setOk(false),1500)};
+    try{ navigator.clipboard.writeText(text).then(done,select); }catch(e){ select(); } };
+  return html`<span className="copyrow"><span className="sel" ref=${ref}>${text}</span><button className="copy" onClick=${go}>${ok?'Copied':'Copy'}</button></span>`;
+}
+function Contact(){
+  return html`<div className="page">
+    <${PageHead} title="Contact" lede="Students and collaborators interested in composites research are welcome to write."/>
+    <section className="section"><div className="wrap">
+      <div className="contact">
+        <div><h3>Email</h3><${Copy} text="mgk.meta@coeptech.ac.in"/><${Copy} text="hod.meta@coeptech.ac.in"/></div>
+        <div><h3>Phone</h3><${Copy} text="020-2550 7800"/><${Copy} text="020-2550 7807"/></div>
+        <div><h3>Office</h3><p>HoD Cabin, 1st Floor, Department of Metallurgy and Materials Engineering, COEP Technological University, Wellesley Road, Shivajinagar, Pune 411005</p>
+          <p style=${{marginTop:'10px'}}><a href="https://maps.google.com/?q=COEP+Technological+University+Pune" target="_blank" rel="noopener">Open in Google Maps</a></p></div>
+      </div>
+    </div></section>
+    <section className="section"><div className="wrap side"><div className="side-head"><h2>Research profiles</h2></div>
+      <div className="links">${LINKS.map(([l,u])=>html`<a key=${l} href=${u} target="_blank" rel="noopener">${l}</a>`)}</div>
+    </div></section>
+  </div>`;
+}
+
+/* ---------- shell ---------- */
+const IDS=ROUTES.map(r=>r[0]);
+const readRoute=()=>{const h=location.hash.replace(/^#\/?/,''); return IDS.includes(h)?h:'home';};
+function useRoute(){
+  const [r,setR]=useState(readRoute());
+  useEffect(()=>{const f=()=>{setR(readRoute());window.scrollTo(0,0)}; addEventListener('hashchange',f); return ()=>removeEventListener('hashchange',f)},[]);
+  return r;
+}
+function Nav({route,dark,toggle}){
+  const [open,setOpen]=useState(false);
+  useEffect(()=>setOpen(false),[route]);
+  return html`<nav className="nav" aria-label="Main"><div className="wrap nav-in">
+    <a className="mark" href="#home" aria-label="Home">MGK</a>
+    <div className="nav-name"><b>Dr Manisha G. Kulthe</b><span>Metallurgy and Materials Engineering, COEP Tech</span></div>
+    <ul id="nav-links" className=${'nav-links'+(open?' open':'')}>
+      ${ROUTES.map(([id,l])=>html`<li key=${id}><a href=${'#'+id} aria-current=${route===id?'page':undefined}>${l}</a></li>`)}
+    </ul>
+    <button className="icon-btn" onClick=${toggle} aria-label=${dark?'Use light theme':'Use dark theme'}><${Icon} n=${dark?'sun':'moon'}/></button>
+    <button className="icon-btn menu-btn" aria-expanded=${open} aria-controls="nav-links" aria-label="Menu" onClick=${()=>setOpen(!open)}><${Icon} n=${open?'x':'menu'}/></button>
+  </div></nav>`;
+}
+function Footer(){
+  return html`<footer className="foot"><div className="wrap foot-in">
+    <div className="foot-id"><span className="logo-plate lg"><img src="images/coep-logo.png" alt="COEP Technological University crest"/></span><div><b>Dr Manisha G. Kulthe</b>Department of Metallurgy and Materials Engineering<br/>COEP Technological University, a unitary public university of the Government of Maharashtra (formerly College of Engineering Pune)</div></div>
+    <nav aria-label="Footer">${ROUTES.slice(1).map(([id,l])=>html`<a key=${id} href=${'#'+id}>${l}</a>`)}</nav>
+  </div></footer>`;
+}
+function useTheme(){
+  const sys=()=>!!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches);
+  const [pick,setPick]=useState(()=>{try{return localStorage.getItem('mgk-theme')}catch(e){return null}});
+  const [sd,setSd]=useState(sys());
+  useEffect(()=>{ if(!window.matchMedia) return; const m=matchMedia('(prefers-color-scheme: dark)'); const f=()=>setSd(m.matches); m.addEventListener&&m.addEventListener('change',f); return ()=>m.removeEventListener&&m.removeEventListener('change',f); },[]);
+  useEffect(()=>{ if(pick) document.documentElement.setAttribute('data-theme',pick); },[pick]);
+  const dark=pick?pick==='dark':sd;
+  const toggle=()=>{const v=dark?'light':'dark'; setPick(v); try{localStorage.setItem('mgk-theme',v)}catch(e){}};
+  return {dark,toggle};
+}
+function App(){
+  const route=useRoute(); const {dark,toggle}=useTheme();
+  const [c,setC]=useState(SEED);
+  useEffect(()=>{ let dead=false;
+    fetch('content/site.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(j=>{ if(j&&!dead) setC(x=>({...x,...j})); }).catch(()=>{});
+    return ()=>{dead=true}; },[]);
+  useEffect(()=>{ const t=ROUTES.find(r=>r[0]===route)[1]; document.title=(route==='home'?'':t+' · ')+'Dr Manisha G. Kulthe'; },[route]);
+  const Page={home:Home,research:Research,publications:Publications,projects:Projects,gallery:Gallery,profile:Profile,awards:Awards,contact:Contact}[route];
+  return html`<${Ctx.Provider} value=${{c}}>
+    <${Masthead}/>
+    <${Nav} route=${route} dark=${dark} toggle=${toggle}/>
+    <main key=${route}><${Page}/></main>
+    <${Footer}/>
+  </${Ctx.Provider}>`;
+}
+window.__MGK={App,html,buildSample,analyse,logSigma};
+if(!window.__NO_MOUNT) ReactDOM.createRoot(document.getElementById('root')).render(html`<${App}/>`);
+})();
+
+</script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>if(window.netlifyIdentity){netlifyIdentity.on("init",u=>{if(!u){netlifyIdentity.on("login",()=>{location.href="/admin/"})}})}</script>
+</body>
+</html>

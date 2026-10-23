@@ -1,0 +1,448 @@
+{
+  "tagline": "Designing polymer nanocomposites that shield electronics, manage heat and resist corrosion, and turning waste into engineering materials.",
+  "about": [
+    "Dr Kulthe heads the Department of Metallurgy and Materials Engineering at COEP Technological University, where she has taught since October 2005, rising from Lecturer to Assistant Professor and Head of Department. She began her career with a year of industrial research at TRDDC, Pune.",
+    "She holds a B.E. from VNIT Nagpur, an M.E. from COEP and a Ph.D. from Savitribai Phule Pune University. Her work is funded by ANRF, AICTE, UGC and industry, and she received the Alumni Distinguished Faculty Fellow Award (2023–25)."
+  ],
+  "portrait": "images/portrait.jpg",
+  "pubs": [
+    {
+      "y": 2026,
+      "t": "A review on polymer-based nanocomposites as radar absorbing materials",
+      "a": "Anil Kumar, M. G. Kulthe",
+      "j": "Polymer-Plastics Technology and Materials",
+      "k": "Journal"
+    },
+    {
+      "y": 2026,
+      "t": "Hexagonal boron nitride for enhancing directional thermal conductivity in polymer matrices",
+      "a": "A. Dahiwal, B. Kandasubramanian, M. G. Kulthe, S. Umak",
+      "j": "Journal of Polymer Research",
+      "k": "Journal"
+    },
+    {
+      "y": 2025,
+      "t": "Leveraging LPDC and HPDC die casting processes for enhanced transport management in India",
+      "a": "M. G. Kulthe, M. Kumar, R. Gadve",
+      "j": "Article",
+      "k": "Journal",
+      "u": "https://www.researchgate.net/publication/397016450_Leveraging_LPDC_and_HPDC_Die_Casting_Processes_for_Enhanced_Transport_Management_in_India"
+    },
+    {
+      "y": 2024,
+      "t": "MXene–reclaimed cellulose acetate composites for methylene blue removal through synergistic adsorption and photocatalysis",
+      "a": "A. Subash, S. Sen, M. Naebe, B. Kandasubramanian, M. Kulthe, A. Kore",
+      "j": "Polymers for Advanced Technologies 35(11): e6622",
+      "k": "Journal",
+      "u": "https://doi.org/10.1002/pat.6622"
+    },
+    {
+      "y": 2024,
+      "t": "The role of additive manufacturing in the study of carbon fiber-reinforced polymer composite",
+      "a": "S. D. Meshram, S. Gupta, M. Kulthe, B. Kandasubramanian",
+      "j": "Polymer Bulletin 81(17): 15469–15511",
+      "k": "Journal",
+      "u": "https://doi.org/10.1007/s00289-024-05273-w"
+    },
+    {
+      "y": 2024,
+      "t": "Rice husk ash: effective reinforcement for epoxy-based composites for electronic applications",
+      "a": "V. S. Darekar, M. G. Kulthe, A. Goyal, R. K. Goyal",
+      "j": "Journal of Electronic Materials 53(3): 1723–1735",
+      "k": "Journal",
+      "u": "https://doi.org/10.1007/s11664-023-10878-x"
+    },
+    {
+      "y": 2024,
+      "t": "Effect of nanosilica on compressive properties of hybrid structural composites",
+      "a": "Y. K. Patel, A. Anand, M. G. Kulthe, et al., C. G. Jayalakshmi",
+      "j": "Book chapter",
+      "k": "Chapter"
+    },
+    {
+      "y": 2023,
+      "t": "Effect of annealing on the physical properties of LaFeO₃ perovskite nanomaterial prepared by co-precipitation method for H₂ generation",
+      "a": "N. A. Patil, Y. S. Patil, G. L. Agawane, M. Kulthe, J. W. Dadge, A. Yengantiwar, A. Deshmukh",
+      "j": "Materials Science Forum 1099: 139–144",
+      "k": "Journal",
+      "u": "https://doi.org/10.4028/p-m96v7q"
+    },
+    {
+      "y": 2022,
+      "t": "Creep, recovery and dynamic mechanical properties of PEK/MWCNT nanocomposites",
+      "a": "M. G. Kulthe, R. K. Goyal, S. P. Butee",
+      "j": "Materials Science and Engineering: B 282: 115752",
+      "k": "Journal",
+      "u": "https://doi.org/10.1016/j.mseb.2022.115752"
+    },
+    {
+      "y": 2022,
+      "t": "Fabrication, mechanical properties and flammability of polypropylene/MoS₂ composites",
+      "a": "A. Kolekar, M. Kulthe, V. Bansode, A. Mali",
+      "j": "Materials Today: Proceedings 50: 1563–1569",
+      "k": "Conference",
+      "u": "https://doi.org/10.1016/j.matpr.2021.09.123"
+    },
+    {
+      "y": 2020,
+      "t": "Electrical, mechanical, and electromagnetic interference shielding properties of poly(ether-ketone)–MWCNT nanocomposites",
+      "a": "M. G. Kulthe, R. K. Goyal, S. P. Butee",
+      "j": "Journal of Materials Science: Materials in Electronics 31(20): 18085–18095",
+      "k": "Journal",
+      "u": "https://doi.org/10.1007/s10854-020-04359-x"
+    },
+    {
+      "y": 2014,
+      "t": "Influence of Cu microparticles on mechanical properties of injection molded polypropylene/Cu composites",
+      "a": "M. A. Kori, M. G. Kulthe, R. K. Goyal",
+      "j": "Int. J. Innovative Research in Science, Engineering and Technology 3(6): 14034–14043",
+      "k": "Journal"
+    },
+    {
+      "y": 2012,
+      "t": "Microhardness and electrical properties of PVC/Cu composites prepared by ball mill",
+      "a": "M. G. Kulthe, R. K. Goyal",
+      "j": "Advanced Materials Letters 3(3): 246–249",
+      "k": "Journal",
+      "u": "https://doi.org/10.5185/amlett.2012.3353"
+    },
+    {
+      "y": 2006,
+      "t": "Model based optimisation of highly automated industrial batch annealing operation",
+      "a": "S. S. Sahay, K. Krishnan, M. Kulthe, A. Chodha, B. Bhattacharya, A. K. Das",
+      "j": "Ironmaking & Steelmaking 33(4): 306–314",
+      "k": "Journal",
+      "u": "https://doi.org/10.1179/174328106X102144"
+    },
+    {
+      "y": 2006,
+      "t": "In pursuit of cycle time reduction of a highly automated industrial batch annealing operation",
+      "a": "S. S. Sahay, K. Krishnan, M. Kulthe, A. Chodha, B. Bhattacharya, A. K. Das",
+      "j": "Tata Search 2: 387–397",
+      "k": "Journal"
+    }
+  ],
+  "projects": [
+    {
+      "y": "2025–30",
+      "t": "High entropy halide perovskites with reduced lead content and high stability for optoelectronic applications",
+      "a": "ANRF",
+      "amt": 250,
+      "on": true
+    },
+    {
+      "y": "2024",
+      "t": "The MacDermid Enthone Center for Anti-Corrosion Plating and Testing",
+      "a": "CSR · MacDermid Alpha Electronics Solutions",
+      "amt": 35,
+      "on": true
+    },
+    {
+      "y": "2013–16",
+      "t": "Development of polymer nanocomposites",
+      "a": "AICTE Research Promotion Scheme",
+      "amt": 21.5
+    },
+    {
+      "y": "2011–14",
+      "t": "Characterization of polymeric composites",
+      "a": "UGC Major Research Project",
+      "amt": 10.5
+    }
+  ],
+  "awards": [
+    {
+      "y": "2023–25",
+      "t": "Alumni Distinguished Faculty Fellow Award",
+      "s": "Alumni Association, Department of Metallurgy, COEP"
+    },
+    {
+      "y": "2004",
+      "t": "Gobind Jagtiani Scholarship (USA)",
+      "s": "For dissertation excellence during M.E."
+    }
+  ],
+  "members": [
+    {
+      "y": "2024",
+      "t": "The Institute of Indian Foundrymen",
+      "s": "Member"
+    },
+    {
+      "y": "2023",
+      "t": "Indian Institute of Metals",
+      "s": "Life member"
+    },
+    {
+      "y": "2008",
+      "t": "Powder Metallurgy Association of India",
+      "s": "Life member"
+    },
+    {
+      "y": "2006",
+      "t": "Materials Research Society of India",
+      "s": "Life member"
+    }
+  ],
+  "qual": [
+    {
+      "y": "2022",
+      "t": "Ph.D., Metallurgy and Materials Science",
+      "s": "Savitribai Phule Pune University"
+    },
+    {
+      "y": "2004",
+      "t": "M.E., Metallurgy",
+      "s": "College of Engineering Pune, University of Pune · Gobind Jagtiani Scholarship"
+    },
+    {
+      "y": "2002",
+      "t": "B.E., Metallurgy",
+      "s": "VNIT (VRCE), Nagpur University"
+    }
+  ],
+  "exp": [
+    {
+      "y": "Present",
+      "t": "Head of Department",
+      "s": "Metallurgy and Materials Engineering, COEP Technological University",
+      "now": true
+    },
+    {
+      "y": "2005 – now",
+      "t": "Lecturer, then Assistant Professor",
+      "s": "Metallurgy and Materials Engineering, COEP Technological University, Pune"
+    },
+    {
+      "y": "1 year",
+      "t": "Research Associate, TRDDC, Pune",
+      "s": "Industrial research on cycle-time optimisation of batch annealing"
+    }
+  ],
+  "gallery": [
+    {
+      "id": "g01",
+      "url": "images/womens-day-felicitation.jpg",
+      "cap": "Receiving the award on International Women’s Day at COEP Technological University",
+      "tag": "Felicitation",
+      "cat": "events"
+    },
+    {
+      "id": "g02",
+      "url": "images/womens-day-awardees.jpg",
+      "cap": "With fellow awardees and dignitaries at the International Women’s Day celebration",
+      "tag": "Award ceremony",
+      "cat": "events"
+    },
+    {
+      "id": "g03",
+      "url": "images/industry-lecture-group.jpg",
+      "cap": "Faculty, students and visiting delegates after an industry lecture in the department seminar hall",
+      "tag": "Industry lecture",
+      "cat": "events"
+    },
+    {
+      "id": "g04",
+      "url": "images/university-connect-felicitation.jpg",
+      "cap": "Felicitating the guest speaker at the Carraro India University Connect session",
+      "tag": "Guest session",
+      "cat": "events"
+    },
+    {
+      "id": "g05",
+      "url": "images/council-hall-delegation.jpg",
+      "cap": "With the visiting industry delegation and COEP faculty in the Council Hall",
+      "tag": "Industry visit",
+      "cat": "events"
+    },
+    {
+      "id": "g06",
+      "url": "images/mou-exchange-council-hall.jpg",
+      "cap": "Exchange of the signed Memorandum of Understanding in the COEP Council Hall",
+      "tag": "MoU signing",
+      "cat": "industry"
+    },
+    {
+      "id": "g07",
+      "url": "images/invited-talk-polymer-composites.jpg",
+      "cap": "Felicitation after the invited talk on polymer composites for automotive applications",
+      "tag": "Invited talk",
+      "cat": "events"
+    },
+    {
+      "id": "g08",
+      "url": "images/syntropy-team.jpg",
+      "cap": "Organising team at SYNTROPY, the student technical festival",
+      "tag": "SYNTROPY",
+      "cat": "events"
+    },
+    {
+      "id": "g09",
+      "url": "images/syntropy-session.jpg",
+      "cap": "Valedictory session of SYNTROPY, hosted with the AIChE student chapter and the Institution’s Innovation Council",
+      "tag": "SYNTROPY",
+      "cat": "events"
+    },
+    {
+      "id": "g10",
+      "url": "images/wies-2025-inauguration.jpg",
+      "cap": "Inauguration of WIES 2025, the Welding Innovation and Excellence Summit, organised by IIW-India Pune Branch with the Department of Metallurgy and Materials Engineering",
+      "tag": "WIES 2025",
+      "cat": "events"
+    },
+    {
+      "id": "g11",
+      "url": "images/department-group-01.jpg",
+      "cap": "Department faculty and visitors on the steps of the Metallurgy and Materials Engineering building",
+      "tag": "Department",
+      "cat": "department"
+    },
+    {
+      "id": "g12",
+      "url": "images/department-entrance-group.jpg",
+      "cap": "Faculty and research students at the department entrance",
+      "tag": "Department",
+      "cat": "department"
+    },
+    {
+      "id": "g13",
+      "url": "images/department-group-02.jpg",
+      "cap": "Faculty and staff of the Department of Metallurgy and Materials Engineering",
+      "tag": "Department",
+      "cat": "department"
+    },
+    {
+      "id": "g14",
+      "url": "images/department-group-03.jpg",
+      "cap": "Group photograph with visiting faculty at the department entrance",
+      "tag": "Department",
+      "cat": "department"
+    },
+    {
+      "id": "g15",
+      "url": "images/department-group-04.jpg",
+      "cap": "Department faculty with guests after a programme at COEP Tech",
+      "tag": "Department",
+      "cat": "department"
+    },
+    {
+      "id": "g16",
+      "url": "images/mou-qualitek-collage.jpg",
+      "cap": "Memorandum of Understanding between COEP Technological University and Qualitek Labs Limited, executed on 6 February 2026",
+      "tag": "MoU · Qualitek Labs",
+      "cat": "industry"
+    },
+    {
+      "id": "g17",
+      "url": "images/department-group-05.jpg",
+      "cap": "Faculty and participants at the department entrance",
+      "tag": "Department",
+      "cat": "department"
+    },
+    {
+      "id": "g18",
+      "url": "images/felicitation-bouquet-01.jpg",
+      "cap": "Welcoming a visiting dignitary to the department",
+      "tag": "Welcome",
+      "cat": "events"
+    },
+    {
+      "id": "g19",
+      "url": "images/mou-signing-group.jpg",
+      "cap": "After an industry Memorandum of Understanding signing at COEP Technological University",
+      "tag": "MoU signing",
+      "cat": "industry"
+    },
+    {
+      "id": "g20",
+      "url": "images/felicitation-bouquet-02.jpg",
+      "cap": "Presenting a bouquet to the chief guest in the department office",
+      "tag": "Welcome",
+      "cat": "events"
+    },
+    {
+      "id": "g21",
+      "url": "images/department-gathering-office.jpg",
+      "cap": "Department faculty and students at a felicitation in the department office",
+      "tag": "Department",
+      "cat": "events"
+    },
+    {
+      "id": "g22",
+      "url": "images/department-group-06.jpg",
+      "cap": "Faculty and research scholars at the department entrance",
+      "tag": "Department",
+      "cat": "department"
+    },
+    {
+      "id": "g23",
+      "url": "images/department-group-07.jpg",
+      "cap": "Group photograph with a visiting delegation at the department",
+      "tag": "Department",
+      "cat": "department"
+    },
+    {
+      "id": "g24",
+      "url": "images/department-group-08.jpg",
+      "cap": "Faculty and guests on the department steps",
+      "tag": "Department",
+      "cat": "department"
+    },
+    {
+      "id": "g25",
+      "url": "images/department-group-09.jpg",
+      "cap": "Department faculty with participants of a training programme",
+      "tag": "Department",
+      "cat": "department"
+    },
+    {
+      "id": "g26",
+      "url": "images/faculty-meeting-hall.jpg",
+      "cap": "Faculty and invited experts after a departmental meeting",
+      "tag": "Meeting",
+      "cat": "department"
+    },
+    {
+      "id": "g27",
+      "url": "images/heritage-building-group.jpg",
+      "cap": "With colleagues outside the heritage main building at COEP Technological University",
+      "tag": "Campus",
+      "cat": "department"
+    },
+    {
+      "id": "g28",
+      "url": "images/classroom-session.jpg",
+      "cap": "A session in progress in the department classroom",
+      "tag": "Teaching",
+      "cat": "department"
+    },
+    {
+      "id": "g29",
+      "url": "images/department-group-10.jpg",
+      "cap": "Faculty, staff and students of the department",
+      "tag": "Department",
+      "cat": "department"
+    },
+    {
+      "id": "g30",
+      "url": "images/equipment-handover.jpg",
+      "cap": "Handing over new instrumentation to the department laboratory",
+      "tag": "Laboratory",
+      "cat": "department"
+    },
+    {
+      "id": "g31",
+      "url": "images/department-group-11.jpg",
+      "cap": "Group photograph at the department entrance",
+      "tag": "Department",
+      "cat": "department"
+    },
+    {
+      "id": "g32",
+      "url": "images/department-group-12.jpg",
+      "cap": "Faculty and students of the Department of Metallurgy and Materials Engineering",
+      "tag": "Department",
+      "cat": "department"
+    }
+  ]
+}

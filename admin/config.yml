@@ -1,0 +1,109 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "images"
+
+site_url: https://example.netlify.app
+display_url: https://example.netlify.app
+logo_url: https://example.netlify.app/images/womens-day-felicitation.jpg
+
+collections:
+  - name: "site"
+    label: "Website content"
+    files:
+      - name: "content"
+        label: "All content"
+        file: "content/site.json"
+        description: "Everything on the website. Edit a section, then press Publish."
+        fields:
+          - { name: tagline, label: "Headline under the name", widget: text }
+          - { name: about, label: "About paragraphs", widget: list, field: { name: p, label: Paragraph, widget: text } }
+          - { name: portrait, label: "Portrait photo", widget: image, required: false, allow_multiple: false }
+
+          - name: gallery
+            label: "Gallery photos"
+            label_singular: "Photo"
+            widget: list
+            summary: "{{fields.cap}}"
+            fields:
+              - { name: id, label: "Internal id (any unique text)", widget: string }
+              - { name: url, label: "Photo", widget: image }
+              - { name: cap, label: "Caption", widget: text }
+              - { name: tag, label: "Short tag (e.g. Award ceremony)", widget: string, required: false }
+              - name: cat
+                label: "Section"
+                widget: select
+                default: "events"
+                options:
+                  - { label: "Events & felicitations", value: "events" }
+                  - { label: "Department & campus", value: "department" }
+                  - { label: "Industry & MoUs", value: "industry" }
+                  - { label: "Research highlights", value: "research" }
+
+          - name: pubs
+            label: "Publications"
+            label_singular: "Publication"
+            widget: list
+            summary: "{{fields.y}} — {{fields.t}}"
+            fields:
+              - { name: y, label: "Year", widget: number, value_type: int }
+              - { name: t, label: "Title", widget: text }
+              - { name: a, label: "Authors", widget: string }
+              - { name: j, label: "Journal, volume and pages", widget: string }
+              - { name: k, label: "Type", widget: select, options: ["Journal", "Conference", "Chapter"], default: "Journal" }
+              - { name: u, label: "DOI or link", widget: string, required: false }
+
+          - name: projects
+            label: "Funded projects"
+            label_singular: "Project"
+            widget: list
+            summary: "{{fields.y}} — {{fields.t}}"
+            fields:
+              - { name: y, label: "Period (e.g. 2025–30)", widget: string }
+              - { name: t, label: "Title", widget: text }
+              - { name: a, label: "Funding agency", widget: string }
+              - { name: amt, label: "Amount in lakh", widget: number, value_type: float }
+              - { name: on, label: "Ongoing", widget: boolean, default: false, required: false }
+
+          - name: awards
+            label: "Awards"
+            label_singular: "Award"
+            widget: list
+            summary: "{{fields.y}} — {{fields.t}}"
+            fields:
+              - { name: y, label: "Year", widget: string }
+              - { name: t, label: "Award", widget: string }
+              - { name: s, label: "Awarded by", widget: string }
+
+          - name: members
+            label: "Professional bodies"
+            label_singular: "Membership"
+            widget: list
+            summary: "{{fields.t}}"
+            fields:
+              - { name: y, label: "Member since", widget: string }
+              - { name: t, label: "Body", widget: string }
+              - { name: s, label: "Type of membership", widget: string }
+
+          - name: exp
+            label: "Experience"
+            label_singular: "Position"
+            widget: list
+            summary: "{{fields.y}} — {{fields.t}}"
+            fields:
+              - { name: y, label: "Period", widget: string }
+              - { name: t, label: "Position", widget: string }
+              - { name: s, label: "Organisation and details", widget: text }
+              - { name: now, label: "Current role (highlighted)", widget: boolean, default: false, required: false }
+
+          - name: qual
+            label: "Qualifications"
+            label_singular: "Degree"
+            widget: list
+            summary: "{{fields.y}} — {{fields.t}}"
+            fields:
+              - { name: y, label: "Year", widget: string }
+              - { name: t, label: "Degree", widget: string }
+              - { name: s, label: "Institution and details", widget: text }
